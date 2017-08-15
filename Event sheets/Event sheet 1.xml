@@ -155,5 +155,55 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="294602090552923">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="699088345392791" type="System" />
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="895263519431852" type="Browser">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="608484244739980">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="168771226214090" type="Player">
+                    <param id="0" name="Object">Bt</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="520266445207559" type="Bt">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="556987811630785" type="Sprite15">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="948255789403903">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="457394711960744" type="Keyboard">
+                            <param id="0" name="Key">88 (X)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="883293531874899" type="Bt">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="283624622470019">
+            <conditions>
+                <condition id="-22" name="Else" sid="113828596016459" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="485254900603558" type="Sprite15">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

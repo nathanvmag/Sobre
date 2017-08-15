@@ -10,6 +10,8 @@
     <unique-id>1fl9q7j8c790d</unique-id>
     <saved-with-version>23900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -542,6 +544,103 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Button" sid="940178376703675">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Browser" sid="374595268140337">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Bt" sid="760060992833174">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="649478919457812" speed="0">
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Downloads\buttons.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Downloads\buttons.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.9375" />
+                            <point x="0" y="0.9375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite15" sid="938847888138595">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="801424779271652" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes.NAVE0\Downloads\keyboard-key-x-lower-case-letter-128.png">
+                        <collision-poly>
+                            <point x="0.046875" y="0.046875" />
+                            <point x="0.5" y="0.015625" />
+                            <point x="0.945313" y="0.0546875" />
+                            <point x="0.984375" y="0.5" />
+                            <point x="0.945313" y="0.945313" />
+                            <point x="0.5" y="0.992188" />
+                            <point x="0.046875" y="0.953125" />
+                            <point x="0.0078125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ArrowAndTarget" sid="639116698292535">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="950316974218585" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes.NAVE0\Documents\Arrow and target.png">
+                        <collision-poly>
+                            <point x="0.0370741" y="0.0401302" />
+                            <point x="0.923848" y="0.5" />
+                            <point x="0.977455" y="0.975597" />
+                            <point x="0.665832" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Target" sid="479055105123271">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="538801244475391" speed="5">
+                    <frame duration="1" hotspotX="0.446174" hotspotY="0.388151" original-source="C:\Users\nathan.magalhaes.NAVE0\Documents\Arrow and target.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.535668" y="0" />
+                            <point x="0.85949" y="0.915795" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="827521587605697">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="242498774807612" speed="5">
+                    <frame duration="1" hotspotX="0.980871" hotspotY="0.993641" original-source="C:\Users\nathan.magalhaes.NAVE0\Documents\Arrow and target.png">
+                        <collision-poly>
+                            <point x="0.0797024" y="0.119237" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -552,6 +651,7 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="11" />
+        <global-instance type="Browser" uid="9" />
     </global-instances>
     <sounds-folder />
     <music-folder />
