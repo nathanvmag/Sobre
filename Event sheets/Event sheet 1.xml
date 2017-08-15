@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Velocity" sid="904292387568253" static="0" type="number">8</variable>
+        <event-block sid="440872477066928">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="824846499006690" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="654671309158304" type="Player">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="620433678534145">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="192419967493336" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="901067323734752" type="Player">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="875435309134216">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="503439445828481" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="443340722827535" type="Player">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="108260154063456">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="201020105881848" type="Player" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="153473985388728">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="391091618621378" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="188387004899973" type="Player">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="690411531005703">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="987741419241110" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="478982173678178" type="Player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="979748079673210">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="563065288419548" type="System" />
+                <condition id="1" name="Is overlapping another object" sid="300447024577462" type="Player">
+                    <param id="0" name="Object">Zones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Scroll to position" sid="532020614519760" type="System">
+                    <param id="0" name="X">lerp(scrollx,(clamp(Player.X,Zones.X+(850),Zones.X+Zones.Width-(850))),0.1*60*dt)</param>
+                    <param id="1" name="Y">lerp(scrolly,(clamp(Player.Y,Zones.Y+(365),Zones.Y+Zones.Height-(365))),0.1*60*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="642681038187739">
+            <conditions>
+                <condition id="2" name="Key is down" sid="309263817614894" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="128150728196724" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="799148285595302">
+            <conditions>
+                <condition id="2" name="Key is down" sid="194061124827877" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="521716422663814" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="137388905719730">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="716489424103947" type="Player">
+                    <param id="0" name="Object">check1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="905973191993811" type="Placa2">
+                    <param id="0" name="Instance variable">Move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="131717436370001">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="303902126958601" type="Placa2">
+                    <param id="0" name="Instance variable">Move</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="473242127082884" type="Placa2">
+                    <param id="0" name="Y">lerp(Placa2.Y, 358.948,Velocity*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="372463045381545">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="845107143596611" type="Player">
+                    <param id="0" name="Object">check2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="810478855450571" type="Placa3">
+                    <param id="0" name="Instance variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="695529329490026">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="466723868297398" type="Placa3">
+                    <param id="0" name="Instance variable">move</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="326035574219527" type="Placa3">
+                    <param id="0" name="Y">lerp(Placa3.Y,344 ,Velocity*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

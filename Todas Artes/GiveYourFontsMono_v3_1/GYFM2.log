@@ -1,0 +1,18 @@
+GYFM3.exe Information: 0 : Version: 3.1.0.0
+Erro no documento XML (0, 0).
+GYFM3.exe Warning: 0 : Persistence failed: Unknown file type.
+SyncControlsToFontDetails-IN
+UpdateWindow-IN
+Void InvokeHandler(System.Delegate, System.Object),Void UpdateWindow(),DrawToBitmap(Arial,Regular,72,<~>,~,500,1000,1,1,1,1)
+UpdateWindow-OUT
+SyncControlsToFontDetails-OUT
+UpdateWindow-IN
+System.Object CreateInstance(System.RuntimeType, Boolean, Boolean, Boolean ByRef, System.RuntimeMethodHandleInternal ByRef, Boolean ByRef),Void UpdateWindow(),DrawToBitmap(Arial,Regular,72,<~>,~,500,1000,1,1,1,1)
+UpdateWindow-OUT
+SyncFontDetailsToControls-IN
+SyncFontDetailsToControls-OUT
+SyncFontDetailsToControls-IN
+SyncFontDetailsToControls-OUT
+UpdateWindow-IN
+Void InvokeHandlersImpl(System.Object, System.Windows.RoutedEventArgs, Boolean),Void UpdateWindow(),DrawToBitmap(Arial,Regular,72,<~>,~,500,1000,1,1,1,1)
+UpdateWindow-OUT

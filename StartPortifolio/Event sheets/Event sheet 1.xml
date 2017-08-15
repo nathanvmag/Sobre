@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <event-block sid="440872477066928">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="824846499006690" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="654671309158304" type="Player">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="620433678534145">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="192419967493336" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="901067323734752" type="Player">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="875435309134216">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="503439445828481" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="443340722827535" type="Player">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="108260154063456">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="201020105881848" type="Player" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="153473985388728">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="391091618621378" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="188387004899973" type="Player">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="690411531005703">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="987741419241110" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="478982173678178" type="Player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="979748079673210">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="563065288419548" type="System" />
+                <condition id="1" name="Is overlapping another object" sid="300447024577462" type="Player">
+                    <param id="0" name="Object">Zones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Scroll to position" sid="532020614519760" type="System">
+                    <param id="0" name="X">lerp(scrollx,(clamp(Player.X,Zones.X+(850),Zones.X+Zones.Width-(850))),0.1*60*dt)</param>
+                    <param id="1" name="Y">lerp(scrolly,(clamp(Player.Y,Zones.Y+(365),Zones.Y+Zones.Height-(365))),0.1*60*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="642681038187739">
+            <conditions>
+                <condition id="2" name="Key is down" sid="309263817614894" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="128150728196724" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="799148285595302">
+            <conditions>
+                <condition id="2" name="Key is down" sid="194061124827877" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="521716422663814" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
