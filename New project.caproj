@@ -19,6 +19,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
@@ -554,7 +555,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="649478919457812" speed="0">
-                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Downloads\buttons.png">
+                    <frame duration="1" hotspotX="0.515306" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\bt up.png">
                         <collision-poly>
                             <point x="0" y="0" />
                             <point x="0" y="0" />
@@ -564,7 +565,7 @@
                             <point x="0" y="1" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.512821" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Downloads\buttons.png">
+                    <frame duration="1" hotspotX="0.515306" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\bt down.png">
                         <collision-poly>
                             <point x="0" y="0" />
                             <point x="0" y="0" />
@@ -626,16 +627,162 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite16" sid="827521587605697">
+        <object-type name="Flecha" sid="827521587605697">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Atirar" sid="360782926896482" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="385612975303361">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="242498774807612" speed="5">
-                    <frame duration="1" hotspotX="0.980871" hotspotY="0.993641" original-source="C:\Users\nathan.magalhaes.NAVE0\Documents\Arrow and target.png">
+                    <frame duration="1" hotspotX="0.998152" hotspotY="0.997238" original-source="C:\Users\nathan.magalhaes.NAVE0\Documents\flecha.png">
                         <collision-poly>
                             <point x="0.0797024" y="0.119237" />
                             <point x="1" y="1" />
                             <point x="1" y="1" />
                             <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlacaAlvo" sid="927585037700784">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="856372323275414" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500709" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\Placa Alvo.png">
+                        <image-point name="Imagepoint 1" x="0.119632" y="0.144681" />
+                        <collision-poly>
+                            <point x="0.0506135" y="0.0468085" />
+                            <point x="0.5" y="0.00141844" />
+                            <point x="0.946319" y="0.0496454" />
+                            <point x="1" y="0.499291" />
+                            <point x="0.564417" y="0.597163" />
+                            <point x="0.5" y="0.997163" />
+                            <point x="0.441718" y="0.591489" />
+                            <point x="0.00613497" y="0.499291" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="alvo" sid="790682708686850">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="367514339204079" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="996430280428779">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="826344394248726" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite17" sid="218428436575849">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="811606366447680" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite18" sid="181831342626118">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="658668240763601" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500709" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\Placa Alvo 2.png">
+                        <collision-poly>
+                            <point x="0.0506135" y="0.0468085" />
+                            <point x="0.5" y="0.00141844" />
+                            <point x="0.946319" y="0.0496454" />
+                            <point x="1" y="0.499291" />
+                            <point x="0.564417" y="0.597163" />
+                            <point x="0.5" y="0.997163" />
+                            <point x="0.441718" y="0.591489" />
+                            <point x="0.00613497" y="0.499291" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite19" sid="537117416187888">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="470382111157764" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite20" sid="591705003810995">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="729651241646359" speed="5">
+                    <frame duration="1" hotspotX="2.74468" hotspotY="1.79876" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\bandeira.png">
+                        <collision-poly>
+                            <point x="0.0265957" y="0.0154799" />
+                            <point x="1" y="0.0557276" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.037234" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="13.0984" hotspotY="6.4644" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\bandeira.png">
+                        <collision-poly>
+                            <point x="0" y="0.0586893" />
+                            <point x="1" y="0.203232" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="10.9116" hotspotY="6.4644" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\bandeira.png">
+                        <collision-poly>
+                            <point x="0" y="0.0586893" />
+                            <point x="0.994475" y="0.203232" />
+                            <point x="0.994475" y="1" />
+                            <point x="0.994475" y="1" />
+                            <point x="0.994475" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="2.74468" hotspotY="1.79876">
+                        <collision-poly>
+                            <point x="0.0265957" y="0.0154799" />
+                            <point x="1" y="0.0557276" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.037234" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="2.74468" hotspotY="1.79876">
+                        <collision-poly>
+                            <point x="0.0265957" y="0.0154799" />
+                            <point x="1" y="0.0557276" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.037234" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="2.74468" hotspotY="1.79876">
+                        <collision-poly>
+                            <point x="0.0265957" y="0.0154799" />
+                            <point x="1" y="0.0557276" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.037234" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>

@@ -191,6 +191,10 @@
                         <action id="5" name="Set frame" sid="883293531874899" type="Bt">
                             <param id="0" name="Frame number">1</param>
                         </action>
+                        <action id="-13" name="Set boolean" sid="359688465506505" type="Flecha">
+                            <param id="0" name="Instance variable">Atirar</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -202,6 +206,33 @@
             <actions>
                 <action id="-15" name="Set visible" sid="485254900603558" type="Sprite15">
                     <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="655901562712152">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="845537531792146" type="Flecha">
+                    <param id="0" name="Instance variable">Atirar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="792949643340046" type="Flecha">
+                    <param id="0" name="X">lerp(Flecha.X,alvo.X,10*dt)</param>
+                </action>
+                <action id="-2" name="Set Y" sid="216697792527748" type="Flecha">
+                    <param id="0" name="Y">lerp(Flecha.Y,alvo.Y,10*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="494013069514770">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="702841075092521" type="Flecha">
+                    <param id="0" name="Object">alvo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="721046748767538" type="PlacaAlvo">
+                    <param id="0" name="Opacity">lerp(PlacaAlvo.Opacity,0,2*dt)</param>
                 </action>
             </actions>
         </event-block>
