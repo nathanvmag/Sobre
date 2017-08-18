@@ -3,6 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="shakeTime" sid="974048076513801" static="0" type="number">0</variable>
+        <variable constant="0" name="shake" sid="610979216885838" static="0" type="number">0</variable>
         <variable constant="0" name="Velocity" sid="904292387568253" static="0" type="number">8</variable>
         <event-block sid="440872477066928">
             <conditions>
@@ -76,8 +78,8 @@
             </conditions>
             <actions>
                 <action id="-7" name="Scroll to position" sid="532020614519760" type="System">
-                    <param id="0" name="X">lerp(scrollx,(clamp(Player.X,Zones.X+(850),Zones.X+Zones.Width-(850))),0.1*60*dt)</param>
-                    <param id="1" name="Y">lerp(scrolly,(clamp(Player.Y,Zones.Y+(365),Zones.Y+Zones.Height-(365))),0.1*60*dt)</param>
+                    <param id="0" name="X">lerp(scrollx,(clamp(Player.X,Zones.X+(850),Zones.X+Zones.Width-(850))),0.1*60*dt) +shake</param>
+                    <param id="1" name="Y">lerp(scrolly,(clamp(Player.Y,Zones.Y+(365),Zones.Y+Zones.Height-(365))),0.1*60*dt)+shake</param>
                 </action>
             </actions>
         </event-block>
@@ -233,6 +235,122 @@
             <actions>
                 <action id="-16" name="Set opacity" sid="721046748767538" type="PlacaAlvo">
                     <param id="0" name="Opacity">lerp(PlacaAlvo.Opacity,0,2*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="493670337974712">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="405567817587572" type="Player">
+                    <param id="0" name="Object">Sprite22</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="178459241239018" type="Arvoce">
+                    <param id="0" name="Instance variable">grow</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="184699852443739">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="909376876732512" type="Arvoce">
+                    <param id="0" name="Instance variable">grow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="858050461618186" type="Arvoce">
+                    <param id="0" name="Width">lerp(Arvoce.Width,456.844,3*dt)</param>
+                </action>
+                <action id="-6" name="Set height" sid="217558208110558" type="Arvoce">
+                    <param id="0" name="Height">lerp(Arvoce.Height, 487.624  ,3*dt)</param>
+                </action>
+                <action id="-9" name="Set value" sid="768849518197256" type="System">
+                    <param id="0" name="Variable">shakeTime</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="829525588115414">
+            <conditions>
+                <condition id="-6" name="Compare height" sid="149523346111283" type="Arvoce">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Height">480</param>
+                </condition>
+                <condition id="-5" name="Compare width" sid="376301744426632" type="Arvoce">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Width">450</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="411239111003671" type="apple">
+                    <param id="0" name="Opacity">lerp(apple.Opacity,100,10*dt)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="828232548427056">
+                    <conditions>
+                        <condition id="-5" name="Compare width" sid="898413354875385" type="Arvoce">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Width">455</param>
+                        </condition>
+                        <condition id="-6" name="Compare height" sid="483311140605442" type="Arvoce">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Height">486</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="669552358484828" type="System">
+                            <param id="0" name="Variable">shakeTime</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="290654257465499" type="Arvoce">
+                            <param id="0" name="Instance variable">grow</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="379256281073712">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="795349064125752" type="System">
+                    <param id="0" name="Variable">shakeTime</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="973984530958584" type="System">
+                    <param id="0" name="Variable">shakeTime</param>
+                    <param id="1" name="Value">- 2*dt</param>
+                </action>
+                <action id="-9" name="Set value" sid="867023941813517" type="System">
+                    <param id="0" name="Variable">shake</param>
+                    <param id="1" name="Value">-10+random(15)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="237183300168537">
+            <conditions>
+                <condition id="-22" name="Else" sid="935519115024743" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="904923865569413" type="System">
+                    <param id="0" name="Variable">shake</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="922900094792856">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="568822270888552" type="apple">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Opacity">96</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="27" name="Set enabled" sid="780666291638653" type="apple">
+                    <param id="0" name="Mode">1</param>
                 </action>
             </actions>
         </event-block>
