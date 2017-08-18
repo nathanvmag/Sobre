@@ -558,6 +558,11 @@
         </object-type>
         <object-type name="Bt" sid="760060992833174">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="318231842310427">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="649478919457812" speed="0">
                     <frame duration="1" hotspotX="0.515306" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\bt up.png">
@@ -1002,7 +1007,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite24" sid="643606439436204">
+        <object-type name="Rocket" sid="643606439436204">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Run" sid="226319701378610" type="boolean" />
@@ -1048,43 +1053,137 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite26" sid="404499830033322">
+        <object-type name="Alien" sid="404499830033322">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="522607891809029" speed="3">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\ali.png">
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="522607891809029" speed="1">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\alien.png">
                         <collision-poly>
-                            <point x="0.339286" y="0.335329" />
-                            <point x="0.997024" y="0.149701" />
-                            <point x="0.997024" y="0.329341" />
-                            <point x="0.997024" y="0.497006" />
-                            <point x="0.997024" y="0.694611" />
-                            <point x="0.997024" y="0.817365" />
-                            <point x="0.247024" y="0.751497" />
+                            <point x="1" y="0.285127" />
+                            <point x="1" y="0.0854777" />
+                            <point x="1" y="0.278686" />
+                            <point x="1" y="0.459016" />
+                            <point x="1" y="0.671546" />
+                            <point x="1" y="0.803572" />
+                            <point x="0.971939" y="0.732729" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\ali.png">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\alien2.png">
                         <collision-poly>
-                            <point x="0" y="0.340299" />
-                            <point x="0.532051" y="0.155224" />
-                            <point x="1" y="0.334328" />
-                            <point x="1" y="0.501493" />
-                            <point x="1" y="0.698507" />
-                            <point x="0.532051" y="0.820895" />
-                            <point x="0" y="0.755224" />
+                            <point x="0" y="0.290151" />
+                            <point x="0.603935" y="0.0907248" />
+                            <point x="1" y="0.283717" />
+                            <point x="1" y="0.463844" />
+                            <point x="1" y="0.676135" />
+                            <point x="0.603935" y="0.808014" />
+                            <point x="0" y="0.73725" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\ali.png">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\alien3.png">
                         <collision-poly>
-                            <point x="0" y="0.350886" />
-                            <point x="0" y="0.15836" />
-                            <point x="0.996894" y="0.344676" />
-                            <point x="0.996894" y="0.518571" />
-                            <point x="0.996894" y="0.723519" />
-                            <point x="0" y="0.850835" />
-                            <point x="0" y="0.782519" />
+                            <point x="0" y="0.249381" />
+                            <point x="0" y="0.0184363" />
+                            <point x="0.991" y="0.241932" />
+                            <point x="0.991" y="0.450528" />
+                            <point x="0.991" y="0.696374" />
+                            <point x="0" y="0.849096" />
+                            <point x="0" y="0.767147" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite24" sid="230177401094123">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432356997183321" speed="5">
+                    <frame duration="1" hotspotX="0.510204" hotspotY="0.512195" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\freetileset\png\Object\Mushroom_1.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.170732" />
+                            <point x="0.489796" y="0" />
+                            <point x="0.857143" y="0.170732" />
+                            <point x="1" y="0.487805" />
+                            <point x="0.816327" y="0.780488" />
+                            <point x="0.489796" y="1" />
+                            <point x="0.183673" y="0.780488" />
+                            <point x="0.0204082" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite26" sid="804622216248657">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="568724460173490" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\freetileset\png\Object\Mushroom_2.png">
+                        <collision-poly>
+                            <point x="0.14" y="0.170732" />
+                            <point x="0.5" y="0" />
+                            <point x="0.86" y="0.170732" />
+                            <point x="0.98" y="0.487805" />
+                            <point x="0.82" y="0.780488" />
+                            <point x="0.5" y="1" />
+                            <point x="0.18" y="0.780488" />
+                            <point x="0.02" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="b7bb94e1743c4a0bb32a7c2b9b7db9a4_1c630465631fdc09ff5b129211499028e" sid="622725065880051">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="421022555706999" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes.NAVE0\Downloads\b7bb94e1-743c-4a0b-b32a-7c2b9b7db9a4_1.c630465631fdc09ff5b129211499028e.jpeg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite27" sid="803447108997813">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529459818305871" speed="5">
+                    <frame duration="1" hotspotX="0.453125" hotspotY="0.55" original-source="C:\Users\nathan.magalhaes.NAVE0\Downloads\036249-yellow-road-sign-icon-culture-space-alien1-sc37.png">
+                        <collision-poly>
+                            <point x="0.246094" y="0.39" />
+                            <point x="0.5" y="0.291667" />
+                            <point x="0.753906" y="0.39" />
+                            <point x="0.957031" y="0.498333" />
+                            <point x="0.5" y="0.688333" />
+                            <point x="0.0429688" y="0.498333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes.NAVE0\Downloads\036249-yellow-road-sign-icon-culture-space-alien1-sc37.png">
+                        <collision-poly>
+                            <point x="0.246094" y="0.246094" />
+                            <point x="0.5" y="0.015625" />
+                            <point x="0.753906" y="0.246094" />
+                            <point x="0.957031" y="0.5" />
+                            <point x="0.5" y="0.945313" />
+                            <point x="0.0429688" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FAKEGROUND" sid="396392140655952">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="603796503158180">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="638565313530981" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btColision" sid="702519361118537">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="290384244370021" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

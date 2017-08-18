@@ -70,9 +70,15 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite23/" />
         <folder expanded="1" path="animation-folder/Arvoce/" />
         <folder expanded="1" path="animation-folder/apple/" />
-        <folder expanded="1" path="animation-folder/Sprite24/" />
+        <folder expanded="1" path="animation-folder/Rocket/" />
         <folder expanded="1" path="animation-folder/AlvoFoguete/" />
         <folder expanded="1" path="animation-folder/Sprite25/" />
+        <folder expanded="1" path="animation-folder/Alien/" />
+        <folder expanded="1" path="animation-folder/Sprite24/" />
         <folder expanded="1" path="animation-folder/Sprite26/" />
+        <folder expanded="1" path="animation-folder/b7bb94e1743c4a0bb32a7c2b9b7db9a4_1c630465631fdc09ff5b129211499028e/" />
+        <folder expanded="1" path="animation-folder/Sprite27/" />
+        <folder expanded="1" path="animation-folder/FAKEGROUND/" />
+        <folder expanded="1" path="animation-folder/btColision/" />
     </folders-expanded>
 </c2uistate>
