@@ -8,8 +8,9 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>1fl9q7j8c790d</unique-id>
-    <saved-with-version>24400</saved-with-version>
+    <saved-with-version>23900</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
@@ -69,6 +70,9 @@
             <behaviors>
                 <behavior-type name="Solid" sid="397918216235165">
                     <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="964504045980978">
+                    <behavior id="Physics" />
                 </behavior-type>
             </behaviors>
             <texture original-source="C:\Users\nathan.magalhaes.NAVE0\Downloads\freetileset\png\Tiles\2.png" />
@@ -954,6 +958,9 @@
                 <behavior-type name="Solid" sid="473561227450400">
                     <behavior id="solid" />
                 </behavior-type>
+                <behavior-type name="Physics" sid="832697260135492">
+                    <behavior id="Physics" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="697257878057793" speed="5">
@@ -990,6 +997,92 @@
                             <point x="0.5" y="0.995833" />
                             <point x="0.124277" y="0.880556" />
                             <point x="0.0115607" y="0.577778" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite24" sid="643606439436204">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Run" sid="226319701378610" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205359500858124" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\nave_0000_Camada-2-copiar-2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\nave_0001_Camada-3-copiar.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\nave_0002_Camada-3.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="Stop" pingpong="0" repeatcount="1" repeatto="0" sid="441101859722673" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.00243309" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\nave_0000_Camada-2-copiar-2.png">
+                        <collision-poly>
+                            <point x="0.232017" y="0.17983" />
+                            <point x="0.5" y="0.00554532" />
+                            <point x="0.755983" y="0.189167" />
+                            <point x="0.915973" y="0.824062" />
+                            <point x="0.507999" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.468002" y="1" />
+                            <point x="0.0800273" y="0.824062" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Array" sid="920562945056549">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="AlvoFoguete" sid="607359013499353">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="977705244101549" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite25" sid="725611781550685">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="936930963127258" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite26" sid="404499830033322">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="522607891809029" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\ali.png">
+                        <collision-poly>
+                            <point x="0.339286" y="0.335329" />
+                            <point x="0.997024" y="0.149701" />
+                            <point x="0.997024" y="0.329341" />
+                            <point x="0.997024" y="0.497006" />
+                            <point x="0.997024" y="0.694611" />
+                            <point x="0.997024" y="0.817365" />
+                            <point x="0.247024" y="0.751497" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\ali.png">
+                        <collision-poly>
+                            <point x="0" y="0.340299" />
+                            <point x="0.532051" y="0.155224" />
+                            <point x="1" y="0.334328" />
+                            <point x="1" y="0.501493" />
+                            <point x="1" y="0.698507" />
+                            <point x="0.532051" y="0.820895" />
+                            <point x="0" y="0.755224" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\ali.png">
+                        <collision-poly>
+                            <point x="0" y="0.350886" />
+                            <point x="0" y="0.15836" />
+                            <point x="0.996894" y="0.344676" />
+                            <point x="0.996894" y="0.518571" />
+                            <point x="0.996894" y="0.723519" />
+                            <point x="0" y="0.850835" />
+                            <point x="0" y="0.782519" />
                         </collision-poly>
                     </frame>
                 </animation>

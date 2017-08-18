@@ -297,6 +297,9 @@
                             <param id="0" name="Comparison">4</param>
                             <param id="1" name="Height">486</param>
                         </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="494858237227782" type="Arvoce">
+                            <param id="0" name="Instance variable">grow</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="669552358484828" type="System">
@@ -351,6 +354,107 @@
             <actions>
                 <action behavior="Physics" id="27" name="Set enabled" sid="780666291638653" type="apple">
                     <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="502881854789372">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="123329636579399" type="apple">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Opacity">99</param>
+                </condition>
+                <condition behavior="Physics" id="1" name="Compare velocity" sid="163271904156183" type="apple">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="27" name="Set enabled" sid="410687255034517" type="apple">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="447551123126686" type="apple">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="697371329971334">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="508890582694467" type="Player">
+                    <param id="0" name="Object">apple</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="493843914192110" type="Sprite15">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="988009849234322">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="582026860206120" type="Keyboard">
+                            <param id="0" name="Key">88 (X)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="277653067156906" type="Sprite24">
+                            <param id="0" name="Instance variable">Run</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="296536731298131" type="apple" />
+                        <action id="-9" name="Set value" sid="647815452343253" type="System">
+                            <param id="0" name="Variable">shakeTime</param>
+                            <param id="1" name="Value">1.6</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="499685795151136">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="187246520200125" type="Sprite24">
+                    <param id="0" name="Instance variable">Run</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="291979325984678" type="Sprite24">
+                    <param id="0" name="X">lerp(Sprite24.X,AlvoFoguete.X,dt)</param>
+                </action>
+                <action id="-2" name="Set Y" sid="811683625796040" type="Sprite24">
+                    <param id="0" name="Y">lerp(Sprite24.Y,AlvoFoguete.Y,dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="527823103694914">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="572385965858006" type="Sprite24">
+                    <param id="0" name="Object">AlvoFoguete</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="775015282983967" type="Sprite26">
+                    <param id="0" name="X">AlvoFoguete.X+ 120</param>
+                </action>
+                <action id="-2" name="Set Y" sid="555135111734716" type="Sprite26">
+                    <param id="0" name="Y">AlvoFoguete.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="213938501864618">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="754521119481742" type="Sprite24">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">455</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="311128928900713" type="Sprite24">
+                    <param id="0" name="Instance variable">Run</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="508514630392290" type="Sprite24">
+                    <param id="0" name="Animation">&quot;Stop&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
