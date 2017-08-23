@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>1fl9q7j8c790d</unique-id>
-    <saved-with-version>23900</saved-with-version>
+    <saved-with-version>24400</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
@@ -1019,16 +1019,16 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\nave_0002_Camada-3.png" />
                 </animation>
                 <animation framecount="1" loop="0" name="Stop" pingpong="0" repeatcount="1" repeatto="0" sid="441101859722673" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.00243309" original-source="C:\Users\nathan.magalhaes.NAVE0\Desktop\GitHub\Sobre\Todas Artes\nave_0000_Camada-2-copiar-2.png">
+                    <frame duration="1" hotspotX="0.459677" hotspotY="-0.00954654" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\navevazia.png">
                         <collision-poly>
-                            <point x="0.232017" y="0.17983" />
-                            <point x="0.5" y="0.00554532" />
-                            <point x="0.755983" y="0.189167" />
-                            <point x="0.915973" y="0.824062" />
-                            <point x="0.507999" y="1" />
-                            <point x="0.5" y="1" />
-                            <point x="0.468002" y="1" />
-                            <point x="0.0800273" y="0.824062" />
+                            <point x="0.169147" y="0.174335" />
+                            <point x="0.457661" y="0" />
+                            <point x="0.733256" y="0.184006" />
+                            <point x="0.905503" y="0.84163" />
+                            <point x="0.466273" y="1" />
+                            <point x="0.457661" y="1" />
+                            <point x="0.423212" y="1" />
+                            <point x="0.00551326" y="0.84163" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1184,6 +1184,25 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="290384244370021" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite28" sid="500874141071497">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277227289372954" speed="5">
+                    <frame duration="1" hotspotX="0.500597" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\bandeira ingles.png">
+                        <collision-poly>
+                            <point x="0.107527" y="0.131579" />
+                            <point x="0.499403" y="0.400585" />
+                            <point x="0.896057" y="0.127193" />
+                            <point x="0.597372" y="0.5" />
+                            <point x="0.598566" y="0.508772" />
+                            <point x="0.499403" y="0.619883" />
+                            <point x="0.421744" y="0.483918" />
+                            <point x="0.419355" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
