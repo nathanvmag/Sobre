@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>1fl9q7j8c790d</unique-id>
-    <saved-with-version>24400</saved-with-version>
+    <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
@@ -1201,6 +1201,180 @@
                             <point x="0.499403" y="0.619883" />
                             <point x="0.421744" y="0.483918" />
                             <point x="0.419355" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="autojump" sid="554794720145037">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="527579851552153" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite29" sid="608788940379255">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="924054330556018" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes.NAVE0.000\Desktop\GitHub\Sobre\Todas Artes\freescifiplatform\png\Objects\DoorOpen.png">
+                        <collision-poly>
+                            <point x="0.0428571" y="0.0258621" />
+                            <point x="0.5" y="0" />
+                            <point x="0.953571" y="0.0280172" />
+                            <point x="0.996429" y="0.5" />
+                            <point x="0.964286" y="0.978448" />
+                            <point x="0.5" y="0.997845" />
+                            <point x="0.0357143" y="0.978448" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite30" sid="540964114837393">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="964931242909081" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground4" sid="938069234759301">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\nathan.magalhaes.NAVE0.000\Desktop\GitHub\Sobre\Todas Artes\freescifiplatform\png\Tiles\Tile (4).png" />
+        </object-type>
+        <object-type name="TiledBackground5" sid="357914962240950">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\nathan.magalhaes.NAVE0.000\Desktop\GitHub\Sobre\Todas Artes\freescifiplatform\png\Tiles\Tile (6).png" />
+        </object-type>
+        <object-type name="TiledBackground6" sid="257472513525019">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="130569523750383">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="668247674172023">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\nathan.magalhaes.NAVE0.000\Desktop\GitHub\Sobre\Todas Artes\freescifiplatform\png\Tiles\Tile (2).png" />
+        </object-type>
+        <object-type name="TiledBackground7" sid="233171532305348">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\nathan.magalhaes.NAVE0.000\Desktop\GitHub\Sobre\Todas Artes\freescifiplatform\png\Tiles\bg.png" />
+        </object-type>
+        <object-type name="Sprite31" sid="558658500444243">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="282878040597692" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground8" sid="692188840663196">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\nathan.magalhaes.NAVE0.000\Desktop\GitHub\Sobre\Todas Artes\freescifiplatform\png\Tiles\Fence (2).png" />
+        </object-type>
+        <object-type name="Sprite32" sid="760154857701429">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="358098112986465" speed="5">
+                    <frame duration="1" hotspotX="-0.0238095" hotspotY="0.183544" original-source="C:\Users\nathan.magalhaes.NAVE0.000\Desktop\GitHub\Sobre\Todas Artes\freescifiplatform\png\Tiles\Fence (1).png">
+                        <collision-poly>
+                            <point x="0.015873" y="0.21519" />
+                            <point x="0.174603" y="0.0253165" />
+                            <point x="0.968254" y="0.183544" />
+                            <point x="0.936508" y="0.949367" />
+                            <point x="0.015873" y="0.151899" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite33" sid="382238826312245">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="245556201316725" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.183544" original-source="C:\Users\nathan.magalhaes.NAVE0.000\Desktop\GitHub\Sobre\Todas Artes\freescifiplatform\png\Tiles\Fence (2).png">
+                        <collision-poly>
+                            <point x="0.403101" y="0.0253165" />
+                            <point x="0.596899" y="0.0253165" />
+                            <point x="0.984496" y="0.183544" />
+                            <point x="0.968992" y="0.949367" />
+                            <point x="0.5" y="0.993671" />
+                            <point x="0.0310078" y="0.949367" />
+                            <point x="0.0193798" y="0.183544" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite34" sid="649012465970040">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="850839071674836" speed="5">
+                    <frame duration="1" hotspotX="1.02381" hotspotY="0.183544" original-source="C:\Users\nathan.magalhaes.NAVE0.000\Desktop\GitHub\Sobre\Todas Artes\freescifiplatform\png\Tiles\Fence (3).png">
+                        <collision-poly>
+                            <point x="0.825397" y="0.0253165" />
+                            <point x="0.984127" y="0.21519" />
+                            <point x="0.984127" y="0.151899" />
+                            <point x="0.0634921" y="0.949367" />
+                            <point x="0.031746" y="0.183544" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite35" sid="753135089011987">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509711397193786" speed="5">
+                    <frame duration="1" hotspotX="-0.0238095" hotspotY="0.183544" original-source="C:\Users\nathan.magalhaes.NAVE0.000\Desktop\GitHub\Sobre\Todas Artes\freescifiplatform\png\Tiles\Fence (1).png">
+                        <collision-poly>
+                            <point x="0.015873" y="0.21519" />
+                            <point x="0.174603" y="0.0253165" />
+                            <point x="0.968254" y="0.183544" />
+                            <point x="0.936508" y="0.949367" />
+                            <point x="0.015873" y="0.151899" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite36" sid="295194072647872">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="703835425707278" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes.NAVE0.000\Desktop\GitHub\Sobre\Todas Artes\freescifiplatform\png\Tiles\Spike.png">
+                        <collision-poly>
+                            <point x="0.46875" y="0.46875" />
+                            <point x="0.5" y="0.332031" />
+                            <point x="0.535156" y="0.464844" />
+                            <point x="0.882813" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.117188" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite37" sid="988690054555788">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="662177798503385" speed="5">
+                    <frame duration="1" hotspotX="0.498599" hotspotY="0.501385" original-source="C:\Users\nathan.magalhaes.NAVE0.000\Desktop\GitHub\Sobre\Todas Artes\freescifiplatform\png\Objects\Saw.png">
+                        <collision-poly>
+                            <point x="0.156863" y="0.155125" />
+                            <point x="0.498599" y="0.00277008" />
+                            <point x="0.795518" y="0.202216" />
+                            <point x="0.963585" y="0.498615" />
+                            <point x="0.843137" y="0.844875" />
+                            <point x="0.498599" y="0.99723" />
+                            <point x="0.204482" y="0.797784" />
+                            <point x="0.0364146" y="0.498615" />
                         </collision-poly>
                     </frame>
                 </animation>

@@ -81,6 +81,9 @@
                     <param id="0" name="X">lerp(scrollx,(clamp(Player.X,Zones.X+(850),Zones.X+Zones.Width-(850))),0.1*60*dt) +shake</param>
                     <param id="1" name="Y">lerp(scrolly,(clamp(Player.Y,Zones.Y+(365),Zones.Y+Zones.Height-(365))),0.1*60*dt)+shake</param>
                 </action>
+                <action id="-19" name="Rotate counter-clockwise" sid="567440966965570" type="Sprite37">
+                    <param id="0" name="Degrees">120*dt</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="642681038187739">
