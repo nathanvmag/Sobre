@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">Layout 1</layout>
-        <event-sheet order="0">Event sheet 1</event-sheet>
+        <layout order="1">Layout 1</layout>
+        <event-sheet active="1" order="0">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -80,7 +80,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite27/" />
         <folder expanded="1" path="animation-folder/FAKEGROUND/" />
         <folder expanded="1" path="animation-folder/btColision/" />
-        <folder expanded="1" path="animation-folder/Sprite28/" />
+        <folder expanded="1" path="animation-folder/english/" />
         <folder expanded="1" path="animation-folder/autojump/" />
         <folder expanded="1" path="animation-folder/Sprite29/" />
         <folder expanded="1" path="animation-folder/Sprite30/" />
@@ -91,5 +91,22 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite35/" />
         <folder expanded="1" path="animation-folder/Sprite36/" />
         <folder expanded="1" path="animation-folder/Sprite37/" />
+        <folder expanded="1" path="animation-folder/tv/" />
+        <folder expanded="1" path="animation-folder/Sprite28/" />
+        <folder expanded="1" path="animation-folder/Sprite38/" />
+        <folder expanded="1" path="animation-folder/Tvanim/" />
+        <folder expanded="1" path="animation-folder/platarform/" />
+        <folder expanded="1" path="animation-folder/Sprite39/" />
+        <folder expanded="1" path="animation-folder/Sprite40/" />
+        <folder expanded="1" path="animation-folder/Sprite41/" />
+        <folder expanded="1" path="animation-folder/Sprite42/" />
+        <folder expanded="1" path="animation-folder/pnArcade/" />
+        <folder expanded="1" path="animation-folder/RSarcade/" />
+        <folder expanded="1" path="animation-folder/Sprite43/" />
+        <folder expanded="1" path="animation-folder/Sprite44/" />
+        <folder expanded="1" path="animation-folder/Barrel/" />
+        <folder expanded="1" path="animation-folder/Plataform2/" />
+        <folder expanded="1" path="animation-folder/flyer/" />
+        <folder expanded="1" path="animation-folder/ReachPlataform/" />
     </folders-expanded>
 </c2uistate>

@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="shakeTime" sid="974048076513801" static="0" type="number">0</variable>
+        <variable constant="0" name="shake" sid="610979216885838" static="0" type="number">0</variable>
+        <variable constant="0" name="Velocity" sid="904292387568253" static="0" type="number">8</variable>
+        <event-block sid="440872477066928">
+            <conditions>
+                <condition behavior="Platform" id="8" name="On moved" sid="824846499006690" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="654671309158304" type="Player">
+                    <param id="0" name="Animation">&quot;Walk&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="620433678534145">
+            <conditions>
+                <condition behavior="Platform" id="7" name="On stopped" sid="192419967493336" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="901067323734752" type="Player">
+                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="875435309134216">
+            <conditions>
+                <condition behavior="Platform" id="5" name="On jump" sid="503439445828481" type="Player" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="443340722827535" type="Player">
+                    <param id="0" name="Animation">&quot;Jump&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="108260154063456">
+            <conditions>
+                <condition behavior="Platform" id="9" name="On landed" sid="201020105881848" type="Player" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="153473985388728">
+                    <conditions>
+                        <condition behavior="Platform" id="0" name="Is moving" sid="391091618621378" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="188387004899973" type="Player">
+                            <param id="0" name="Animation">&quot;Walk&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="690411531005703">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="987741419241110" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="478982173678178" type="Player">
+                            <param id="0" name="Animation">&quot;Idle&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="979748079673210">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="563065288419548" type="System" />
+                <condition id="1" name="Is overlapping another object" sid="300447024577462" type="Player">
+                    <param id="0" name="Object">Zones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Scroll to position" sid="532020614519760" type="System">
+                    <param id="0" name="X">lerp(scrollx,(clamp(Player.X,Zones.X+(850),Zones.X+Zones.Width-(850))),0.1*60*dt) +shake</param>
+                    <param id="1" name="Y">lerp(scrolly,(clamp(Player.Y,Zones.Y+(365),Zones.Y+Zones.Height-(365))),0.1*60*dt)+shake</param>
+                </action>
+                <action id="-19" name="Rotate counter-clockwise" sid="567440966965570" type="Sprite37">
+                    <param id="0" name="Degrees">120*dt</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="642681038187739">
+            <conditions>
+                <condition id="2" name="Key is down" sid="309263817614894" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="128150728196724" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="799148285595302">
+            <conditions>
+                <condition id="2" name="Key is down" sid="194061124827877" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Set mirrored" sid="521716422663814" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="137388905719730">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="716489424103947" type="Player">
+                    <param id="0" name="Object">check1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="905973191993811" type="Placa2">
+                    <param id="0" name="Instance variable">Move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="131717436370001">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="303902126958601" type="Placa2">
+                    <param id="0" name="Instance variable">Move</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="473242127082884" type="Placa2">
+                    <param id="0" name="Y">lerp(Placa2.Y, 358.948,Velocity*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="372463045381545">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="845107143596611" type="Player">
+                    <param id="0" name="Object">check2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="810478855450571" type="Placa3">
+                    <param id="0" name="Instance variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="695529329490026">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="466723868297398" type="Placa3">
+                    <param id="0" name="Instance variable">move</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="326035574219527" type="Placa3">
+                    <param id="0" name="Y">lerp(Placa3.Y,344 ,Velocity*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="294602090552923">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="699088345392791" type="System" />
+            </conditions>
+            <actions>
+                <action id="10" name="Request fullscreen" sid="895263519431852" type="Browser">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="655901562712152">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="845537531792146" type="Flecha">
+                    <param id="0" name="Instance variable">Atirar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="792949643340046" type="Flecha">
+                    <param id="0" name="X">lerp(Flecha.X,alvo.X,10*dt)</param>
+                </action>
+                <action id="-2" name="Set Y" sid="216697792527748" type="Flecha">
+                    <param id="0" name="Y">lerp(Flecha.Y,alvo.Y,10*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="494013069514770">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="702841075092521" type="Flecha">
+                    <param id="0" name="Object">alvo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="721046748767538" type="PlacaAlvo">
+                    <param id="0" name="Opacity">lerp(PlacaAlvo.Opacity,0,2*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="493670337974712">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="405567817587572" type="Player">
+                    <param id="0" name="Object">Sprite22</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="178459241239018" type="Arvoce">
+                    <param id="0" name="Instance variable">grow</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="184699852443739">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="909376876732512" type="Arvoce">
+                    <param id="0" name="Instance variable">grow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="858050461618186" type="Arvoce">
+                    <param id="0" name="Width">lerp(Arvoce.Width,456.844,3*dt)</param>
+                </action>
+                <action id="-6" name="Set height" sid="217558208110558" type="Arvoce">
+                    <param id="0" name="Height">lerp(Arvoce.Height, 487.624  ,3*dt)</param>
+                </action>
+                <action id="-9" name="Set value" sid="768849518197256" type="System">
+                    <param id="0" name="Variable">shakeTime</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="829525588115414">
+            <conditions>
+                <condition id="-6" name="Compare height" sid="149523346111283" type="Arvoce">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Height">480</param>
+                </condition>
+                <condition id="-5" name="Compare width" sid="376301744426632" type="Arvoce">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Width">450</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="411239111003671" type="apple">
+                    <param id="0" name="Opacity">lerp(apple.Opacity,100,10*dt)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="828232548427056">
+                    <conditions>
+                        <condition id="-5" name="Compare width" sid="898413354875385" type="Arvoce">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Width">455</param>
+                        </condition>
+                        <condition id="-6" name="Compare height" sid="483311140605442" type="Arvoce">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Height">486</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="494858237227782" type="Arvoce">
+                            <param id="0" name="Instance variable">grow</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="669552358484828" type="System">
+                            <param id="0" name="Variable">shakeTime</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="290654257465499" type="Arvoce">
+                            <param id="0" name="Instance variable">grow</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="379256281073712">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="795349064125752" type="System">
+                    <param id="0" name="Variable">shakeTime</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="973984530958584" type="System">
+                    <param id="0" name="Variable">shakeTime</param>
+                    <param id="1" name="Value">- 2*dt</param>
+                </action>
+                <action id="-9" name="Set value" sid="867023941813517" type="System">
+                    <param id="0" name="Variable">shake</param>
+                    <param id="1" name="Value">-3+random(6)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="237183300168537">
+            <conditions>
+                <condition id="-22" name="Else" sid="935519115024743" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="904923865569413" type="System">
+                    <param id="0" name="Variable">shake</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="922900094792856">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="568822270888552" type="apple">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Opacity">96</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="27" name="Set enabled" sid="780666291638653" type="apple">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="502881854789372">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="123329636579399" type="apple">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Opacity">99</param>
+                </condition>
+                <condition behavior="Physics" id="1" name="Compare velocity" sid="163271904156183" type="apple">
+                    <param id="0" name="Which">2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="27" name="Set enabled" sid="410687255034517" type="apple">
+                    <param id="0" name="Mode">0</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="447551123126686" type="apple">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="697371329971334">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="508890582694467" type="Player">
+                    <param id="0" name="Object">apple</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="277653067156906" type="Rocket">
+                    <param id="0" name="Instance variable">Run</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="296536731298131" type="apple" />
+                <action id="-9" name="Set value" sid="647815452343253" type="System">
+                    <param id="0" name="Variable">shakeTime</param>
+                    <param id="1" name="Value">0.8</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="499685795151136">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="187246520200125" type="Rocket">
+                    <param id="0" name="Instance variable">Run</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="291979325984678" type="Rocket">
+                    <param id="0" name="X">lerp(Rocket.X,AlvoFoguete.X,dt)</param>
+                </action>
+                <action id="-2" name="Set Y" sid="811683625796040" type="Rocket">
+                    <param id="0" name="Y">lerp(Rocket.Y,AlvoFoguete.Y,dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="213938501864618">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="754521119481742" type="Rocket">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Y co-ordinate">455</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="311128928900713" type="Rocket">
+                    <param id="0" name="Instance variable">Run</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="508514630392290" type="Rocket">
+                    <param id="0" name="Animation">&quot;Stop&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="216781391375723" type="Alien">
+                    <param id="0" name="X">6556</param>
+                </action>
+                <action id="-2" name="Set Y" sid="750222980507758" type="Alien">
+                    <param id="0" name="Y">672</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="849791068089881" type="Alien">
+                    <param id="0" name="Opacity">lerp(Alien.Opacity,100,7*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="970163883725715">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="592527630197488" type="Player">
+                    <param id="0" name="Object">btColision</param>
+                </condition>
+                <condition id="3" name="Compare frame" sid="492530536268838" type="Bt">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="428801716273440" type="System">
+                    <param id="0" name="Seconds">0.05</param>
+                </action>
+                <action id="5" name="Set frame" sid="645139440687505" type="Bt">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="651892977231832" type="Flecha">
+                    <param id="0" name="Instance variable">Atirar</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="253724800503973" type="Bt">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="884564311699216">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="361087267767633" type="Player">
+                    <param id="0" name="Object">Sprite26</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="21" name="Set immovable" sid="861131557978158" type="english">
+                    <param id="0" name="Setting">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="502259812192191">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="125004105689826" type="Player">
+                    <param id="0" name="Object">Sprite38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="354587729515537" type="Sprite38">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="633616843588651" type="System">
+                    <param id="0" name="Seconds">0.6</param>
+                </action>
+                <action id="4" name="Set animation" sid="798775532054392" type="Tvanim">
+                    <param id="0" name="Animation">&quot;ligada&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="252611763585142">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="372102884520398" type="Player">
+                    <param id="0" name="Object">platarform</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="21" name="Set immovable" sid="312139440516330" type="platarform">
+                    <param id="0" name="Setting">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="467180096845682">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="247337113616566" type="platarform">
+                    <param id="0" name="Object">grondEnter</param>
+                </condition>
+                <condition id="9" name="Is overlapping at offset" sid="911214966380300" type="Player">
+                    <param id="0" name="Object">platarform</param>
+                    <param id="1" name="Offset X">0</param>
+                    <param id="2" name="Offset Y">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="3" name="Apply impulse" sid="789423166644979" type="Player">
+                    <param id="0" name="Impulse X">0</param>
+                    <param id="1" name="Implulse Y">-50</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
