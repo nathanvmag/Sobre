@@ -286,11 +286,33 @@
                     <param id="0" name="Variable">shakeTime</param>
                     <param id="1" name="Value">- 2*dt</param>
                 </action>
-                <action id="-9" name="Set value" sid="867023941813517" type="System">
-                    <param id="0" name="Variable">shake</param>
-                    <param id="1" name="Value">-3+random(6)</param>
-                </action>
             </actions>
+            <sub-events>
+                <event-block sid="113061214443907">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="646640200926707" type="flyer">
+                            <param id="0" name="Instance variable">move</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="672179436205072" type="System">
+                            <param id="0" name="Variable">shake</param>
+                            <param id="1" name="Value">1-random(2)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="234617142702493">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="502957355060506" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="867023941813517" type="System">
+                            <param id="0" name="Variable">shake</param>
+                            <param id="1" name="Value">-3+random(6)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="237183300168537">
             <conditions>
@@ -539,6 +561,10 @@
                     <param id="0" name="Animation">&quot;Idle&quot;</param>
                     <param id="1" name="From">1</param>
                 </action>
+                <action id="-9" name="Set value" sid="979463431561452" type="System">
+                    <param id="0" name="Variable">shakeTime</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="905215058876227">
@@ -555,6 +581,50 @@
                 </action>
                 <action behavior="Platform" id="11" name="Set enabled" sid="684886581857015" type="Player">
                     <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="713550597392416">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="601715312622965" type="Keyboard">
+                    <param id="0" name="Key">88</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="678147244109456" type="Player">
+                    <param id="0" name="Object">MobileDev</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="6" name="Set speed" sid="147746907719186" type="MobileDev">
+                    <param id="0" name="Speed">12</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="641056937858418">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="768894245609744" type="MobileDev">
+                    <param id="0" name="Comparison">5</param>
+                    <param id="1" name="Number">70</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="105527725289831" type="Player">
+                    <param id="0" name="Object">showCelphone</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="335949299138060" type="2apps">
+                    <param id="0" name="Instance variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="388431179560228">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="809123000166618" type="2apps">
+                    <param id="0" name="Instance variable">move</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="120432721961779" type="2apps">
+                    <param id="0" name="Opacity">lerp(2apps.Opacity,100,2*dt)</param>
                 </action>
             </actions>
         </event-block>

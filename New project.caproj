@@ -1819,6 +1819,146 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="TiledBackground6" sid="877514988807144">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\freescifiplatform\png\Tiles\Acid (1).png" />
+        </object-type>
+        <object-type name="MobileDev" sid="303381375478363">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="101" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="879215384403445" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0015.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0017.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0018.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0019.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0020.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0021.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0022.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0023.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0024.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0025.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0026.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0027.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0028.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0029.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0030.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0031.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0032.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0033.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0034.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0035.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0036.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0037.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0038.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0039.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0040.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0041.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0042.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0043.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0044.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0045.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0046.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0047.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0048.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0049.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0050.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0051.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0052.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0053.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0054.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0055.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0056.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0057.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0058.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0059.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0060.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0061.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0062.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0063.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0064.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0065.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0066.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0067.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0068.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0069.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0070.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0071.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0072.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0073.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0074.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0075.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0076.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0077.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0078.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0079.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0080.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0081.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0082.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0083.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0084.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0085.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0086.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0087.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0088.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0089.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0090.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0091.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0092.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0093.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0094.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0095.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0096.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0097.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0098.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0099.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0100.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501205" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Iphone\mobile0101.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="2apps" sid="574468464526433">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="move" sid="129650511914453" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309369678304914" speed="5">
+                    <frame duration="1" hotspotX="0.460245" hotspotY="0.500711" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\2apps.png">
+                        <collision-poly>
+                            <point x="0.0015291" y="0.26458" />
+                            <point x="0.460245" y="0.000711238" />
+                            <point x="0.989297" y="0.231863" />
+                            <point x="0.989297" y="0.768848" />
+                            <point x="0.460245" y="0.999289" />
+                            <point x="0.0107034" y="0.731863" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="showCelphone" sid="832424455390143">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="474021090099009" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
