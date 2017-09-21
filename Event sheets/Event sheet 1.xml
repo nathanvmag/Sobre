@@ -89,7 +89,7 @@
         <event-block sid="642681038187739">
             <conditions>
                 <condition id="2" name="Key is down" sid="309263817614894" type="Keyboard">
-                    <param id="0" name="Key">37</param>
+                    <param id="0" name="Key">37 (Left arrow)</param>
                 </condition>
             </conditions>
             <actions>
@@ -101,7 +101,7 @@
         <event-block sid="799148285595302">
             <conditions>
                 <condition id="2" name="Key is down" sid="194061124827877" type="Keyboard">
-                    <param id="0" name="Key">39</param>
+                    <param id="0" name="Key">39 (Right arrow)</param>
                 </condition>
             </conditions>
             <actions>
@@ -492,19 +492,63 @@
         <event-block sid="467180096845682">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="247337113616566" type="platarform">
-                    <param id="0" name="Object">grondEnter</param>
+                    <param id="0" name="Object">groundfinal</param>
                 </condition>
-                <condition id="9" name="Is overlapping at offset" sid="911214966380300" type="Player">
+                <condition id="9" name="Is overlapping at offset" sid="422608323306372" type="Player">
                     <param id="0" name="Object">platarform</param>
                     <param id="1" name="Offset X">0</param>
-                    <param id="2" name="Offset Y">0</param>
+                    <param id="2" name="Offset Y">20</param>
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Physics" id="3" name="Apply impulse" sid="789423166644979" type="Player">
-                    <param id="0" name="Impulse X">0</param>
-                    <param id="1" name="Implulse Y">-50</param>
-                    <param id="2" name="Image point">0</param>
+                <action id="-11" name="Add to" sid="856036493932369" type="platarform">
+                    <param id="0" name="Instance variable">time</param>
+                    <param id="1" name="Value">dt</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="467818339241036" type="Player">
+                    <param id="0" name="Opacity">lerp(Player.Opacity,20,dt)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="194033827810523">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="776238623877843" type="platarform">
+                            <param id="0" name="Instance variable">time</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="431665764340879" type="platarform">
+                            <param id="0" name="X">11265</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="986982822089834" type="platarform">
+                            <param id="0" name="Y"> 828</param>
+                        </action>
+                        <action id="-1" name="Set X" sid="907351453910829" type="Player">
+                            <param id="0" name="X">11500</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="196914653981324" type="Player">
+                            <param id="0" name="Y"> 810</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="316254982554667" type="platarform">
+                            <param id="0" name="Setting">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="984040181001944">
+            <conditions>
+                <condition id="-22" name="Else" sid="409253522136761" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="119433317108178" type="platarform">
+                    <param id="0" name="Instance variable">time</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="474924362486523" type="Player">
+                    <param id="0" name="Opacity">100</param>
                 </action>
             </actions>
         </event-block>
@@ -583,11 +627,91 @@
                     <param id="0" name="State">1</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="836206378028516">
+                    <conditions>
+                        <condition id="9" name="Is overlapping at offset" sid="649772575591725" type="Player">
+                            <param id="0" name="Object">flyer</param>
+                            <param id="1" name="Offset X">0</param>
+                            <param id="2" name="Offset Y">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="915299137237078" type="flyer">
+                            <param id="0" name="Instance variable">time</param>
+                            <param id="1" name="Value">dt</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="754307291810327" type="Player">
+                            <param id="0" name="Opacity">lerp(Player.Opacity,20,dt)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="408354205725325">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="142078398376127" type="flyer">
+                                    <param id="0" name="Instance variable">time</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="440062171682638" type="Player">
+                                    <param id="0" name="State">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="342063887344590">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="521790329874443" type="flyer">
+                                    <param id="0" name="Instance variable">time</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="862699557379987" type="Player">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="953697503905013" type="Player">
+                                    <param id="0" name="X">9487</param>
+                                </action>
+                                <action id="-1" name="Set X" sid="832612736324538" type="flyer">
+                                    <param id="0" name="X">flyer.initalX</param>
+                                </action>
+                                <action id="-2" name="Set Y" sid="397051640304012" type="flyer">
+                                    <param id="0" name="Y">flyer.InitialY</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="979657141079595" type="flyer">
+                                    <param id="0" name="Instance variable">time</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action behavior="Platform" id="11" name="Set enabled" sid="193688437502576" type="Player">
+                                    <param id="0" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="290102321974281">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="564277404775970" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="767510515572434" type="flyer">
+                            <param id="0" name="Instance variable">time</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="292950193383786" type="Player">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="713550597392416">
             <conditions>
                 <condition id="0" name="On key pressed" sid="601715312622965" type="Keyboard">
-                    <param id="0" name="Key">88</param>
+                    <param id="0" name="Key">88 (X)</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="678147244109456" type="Player">
                     <param id="0" name="Object">MobileDev</param>
@@ -625,6 +749,21 @@
             <actions>
                 <action id="-16" name="Set opacity" sid="120432721961779" type="2apps">
                     <param id="0" name="Opacity">lerp(2apps.Opacity,100,2*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="484622687327838">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="897741287937309" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="946971145931188" type="flyer">
+                    <param id="0" name="Instance variable">initalX</param>
+                    <param id="1" name="Value">flyer.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="125141615295613" type="flyer">
+                    <param id="0" name="Instance variable">InitialY</param>
+                    <param id="1" name="Value">flyer.Y</param>
                 </action>
             </actions>
         </event-block>

@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>1fl9q7j8c790d</unique-id>
-    <saved-with-version>24600</saved-with-version>
+    <saved-with-version>23900</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
@@ -1533,6 +1533,9 @@
         </object-type>
         <object-type name="platarform" sid="845807804817845">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="time" sid="558788120172495" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Solid" sid="390731607353130">
                     <behavior id="solid" />
@@ -1788,6 +1791,9 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="move" sid="409804959995436" type="boolean" />
+                <instance-variable name="initalX" sid="285071564978942" type="number" />
+                <instance-variable name="InitialY" sid="856592285172975" type="number" />
+                <instance-variable name="time" sid="250426228307992" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Solid" sid="368900547617623">
@@ -1821,6 +1827,11 @@
         </object-type>
         <object-type name="TiledBackground6" sid="877514988807144">
             <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="228549320160312">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <texture original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\freescifiplatform\png\Tiles\Acid (1).png" />
         </object-type>
         <object-type name="MobileDev" sid="303381375478363">
@@ -1959,15 +1970,96 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite45" sid="831757786222382">
+        <object-type name="groundfinal" sid="924351991883237">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240075185492051" speed="5">
-                    <frame duration="1" hotspotX="0.545455" hotspotY="0.506369" />
-                    <frame duration="1" hotspotX="0.511111" hotspotY="0.506369" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="851832161208143" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite46" sid="417253228059510">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="827941253850999" speed="5">
+                    <frame duration="1" hotspotX="-1.67302" hotspotY="0.5" original-source="C:\Users\NATHAN.MAGALHAES\Desktop\GitHub\sobre\Todas Artes\naveappIphone.png" />
+                    <frame duration="1" hotspotX="-0.558209" hotspotY="0.5" original-source="C:\Users\NATHAN.MAGALHAES\Desktop\GitHub\sobre\Todas Artes\naveappIphone.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite47" sid="508895268036760">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="821642372428166" speed="5">
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.5" original-source="C:\Users\NATHAN.MAGALHAES\Desktop\GitHub\sobre\Todas Artes\naveappIphone.png">
+                        <collision-poly>
+                            <point x="0" y="0.0196959" />
+                            <point x="0" y="0" />
+                            <point x="0.698934" y="0.021562" />
+                            <point x="0.77486" y="0.973892" />
+                            <point x="0" y="0.992553" />
+                            <point x="0" y="0.971611" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.503185">
+                        <collision-poly>
+                            <point x="0.012987" y="0.0256898" />
+                            <point x="0.012987" y="0.00636943" />
+                            <point x="1" y="0.0275203" />
+                            <point x="1" y="0.961691" />
+                            <point x="0.012987" y="0.979997" />
+                            <point x="0.012987" y="0.959454" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.5" original-source="C:\Users\NATHAN.MAGALHAES\Desktop\GitHub\sobre\Todas Artes\naveappIphone.png">
+                        <collision-poly>
+                            <point x="0" y="0.0195697" />
+                            <point x="0" y="0" />
+                            <point x="0.444961" y="0.0214238" />
+                            <point x="0.850226" y="0.967649" />
+                            <point x="0" y="0.98619" />
+                            <point x="0" y="0.965383" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.503185">
+                        <collision-poly>
+                            <point x="0" y="0.0256898" />
+                            <point x="0" y="0.00636943" />
+                            <point x="1" y="0.0275203" />
+                            <point x="1" y="0.961691" />
+                            <point x="0" y="0.979997" />
+                            <point x="0" y="0.959454" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506494" hotspotY="0.503185" original-source="C:\Users\NATHAN.MAGALHAES\Desktop\GitHub\sobre\Todas Artes\naveappIphone.png">
+                        <collision-poly>
+                            <point x="0" y="0.0256898" />
+                            <point x="0" y="0.00636943" />
+                            <point x="0.167257" y="0.0275203" />
+                            <point x="1" y="0.961691" />
+                            <point x="0" y="0.979997" />
+                            <point x="0" y="0.959454" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite45" sid="406690886740547">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="166607611094519" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\NATHAN.MAGALHAES\Desktop\GitHub\sobre\Todas Artes\naveappIphone.png">
+                        <collision-poly>
+                            <point x="0.0466667" y="0.0225806" />
+                            <point x="0.5" y="0" />
+                            <point x="0.953333" y="0.0225806" />
+                            <point x="0.993333" y="0.5" />
+                            <point x="0.926667" y="0.964516" />
+                            <point x="0.5" y="0.987097" />
+                            <point x="0.0666667" y="0.967742" />
+                            <point x="0.00666667" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
