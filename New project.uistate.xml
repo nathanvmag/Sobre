@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Layout 1</layout>
-        <event-sheet active="1" order="0">Event sheet 1</event-sheet>
+        <layout active="1" order="1">Layout 1</layout>
+        <event-sheet order="0">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -123,5 +123,25 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite51/" />
         <folder expanded="1" path="animation-folder/Sprite52/" />
         <folder expanded="1" path="animation-folder/Sprite53/" />
+        <folder expanded="1" path="animation-folder/flag/" />
+        <folder expanded="1" path="animation-folder/Sprite54/" />
+        <folder expanded="1" path="animation-folder/Sprite55/" />
+        <folder expanded="1" path="animation-folder/chrome/" />
+        <folder expanded="1" path="animation-folder/firefox/" />
+        <folder expanded="1" path="animation-folder/safari/" />
+        <folder expanded="1" path="animation-folder/internetexplorerlogoielogo/" />
+        <folder expanded="1" path="animation-folder/warp/" />
+        <folder expanded="1" path="animation-folder/warp2/" />
+        <folder expanded="1" path="animation-folder/Tree_/" />
+        <folder expanded="1" path="animation-folder/Sprite56/" />
+        <folder expanded="1" path="animation-folder/Sprite57/" />
+        <folder expanded="1" path="animation-folder/Extras/" />
+        <folder expanded="1" path="animation-folder/cristal/" />
+        <folder expanded="1" path="animation-folder/SnowMan/" />
+        <folder expanded="1" path="animation-folder/Stone2/" />
+        <folder expanded="1" path="animation-folder/Crystal/" />
+        <folder expanded="1" path="animation-folder/placaProact/" />
+        <folder expanded="1" path="animation-folder/Stone3/" />
+        <folder expanded="1" path="animation-folder/homeSign/" />
     </folders-expanded>
 </c2uistate>

@@ -84,6 +84,18 @@
                 <action id="-19" name="Rotate counter-clockwise" sid="567440966965570" type="Sprite37">
                     <param id="0" name="Degrees">120*dt</param>
                 </action>
+                <action id="-18" name="Rotate clockwise" sid="601781427195035" type="firefox">
+                    <param id="0" name="Degrees">120*dt</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="140150662555954" type="chrome">
+                    <param id="0" name="Degrees">-120*dt</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="468728327836777" type="safari">
+                    <param id="0" name="Degrees">120*dt</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="518477949266607" type="internetexplorerlogoielogo">
+                    <param id="0" name="Degrees">-120*dt</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="642681038187739">
@@ -448,7 +460,7 @@
         <event-block sid="884564311699216">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="361087267767633" type="Player">
-                    <param id="0" name="Object">Sprite26</param>
+                    <param id="0" name="Object">flag</param>
                 </condition>
             </conditions>
             <actions>
@@ -664,12 +676,16 @@
                                 <condition id="-7" name="Compare instance variable" sid="142078398376127" type="flyer">
                                     <param id="0" name="Instance variable">time</param>
                                     <param id="1" name="Comparison">5</param>
-                                    <param id="2" name="Value">1</param>
+                                    <param id="2" name="Value">2.3</param>
                                 </condition>
                             </conditions>
                             <actions>
                                 <action behavior="Platform" id="11" name="Set enabled" sid="440062171682638" type="Player">
                                     <param id="0" name="State">0</param>
+                                </action>
+                                <action id="4" name="Set animation" sid="480325838587053" type="Player">
+                                    <param id="0" name="Animation">&quot;Idle&quot;</param>
+                                    <param id="1" name="From">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -718,20 +734,22 @@
                             <param id="0" name="Opacity">100</param>
                         </action>
                     </actions>
-                </event-block>
-                <event-block sid="973903732653866">
-                    <conditions>
-                        <condition id="-7" name="Compare instance variable" sid="966214168740362" type="flyer">
-                            <param id="0" name="Instance variable">time</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Set opacity" sid="101662074270037" type="Player">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
-                    </actions>
+                    <sub-events>
+                        <event-block sid="775274496050246">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="966214168740362" type="flyer">
+                                    <param id="0" name="Instance variable">time</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-16" name="Set opacity" sid="101662074270037" type="Player">
+                                    <param id="0" name="Opacity">100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-block>
@@ -791,6 +809,67 @@
                 <action id="-10" name="Set value" sid="125141615295613" type="flyer">
                     <param id="0" name="Instance variable">InitialY</param>
                     <param id="1" name="Value">flyer.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="553158891221285">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="864583924510504" type="warp2">
+                    <param id="0" name="Object">Player</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="566291345653043" type="Player">
+                    <param id="0" name="Object">warp</param>
+                    <param id="1" name="Image point (optional)">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="442896755559618">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="787178865444238" type="Player">
+                    <param id="0" name="Object">Tree_</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="490121695225824" type="Extras">
+                    <param id="0" name="Instance variable">move</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="615110135264232">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="978833673788302" type="Extras">
+                    <param id="0" name="Instance variable">move</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Set Y" sid="118626302548138" type="Extras">
+                    <param id="0" name="Y">lerp(Extras.Y,cristal.Y,5*dt)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="996078561794084">
+            <conditions>
+                <condition id="-1" name="Compare X" sid="739914880272811" type="Player">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="X co-ordinate">SnowMan.X</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="884816883580453" type="SnowMan">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521874077898724">
+            <conditions>
+                <condition id="-22" name="Else" sid="873895053981255" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="839535727500358" type="SnowMan">
+                    <param id="0" name="Frame number">1</param>
                 </action>
             </actions>
         </event-block>

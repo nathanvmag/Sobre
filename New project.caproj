@@ -2199,6 +2199,362 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="flag" sid="202743199828786">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="492622207228448" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite54" sid="992344948420856">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="289727267565962" speed="5">
+                    <frame duration="1" hotspotX="0.502959" hotspotY="0.5" original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\placaDown.png">
+                        <collision-poly>
+                            <point x="0.497041" y="0.00675676" />
+                            <point x="0.704142" y="0.337838" />
+                            <point x="0.982249" y="0.97973" />
+                            <point x="0.497041" y="1" />
+                            <point x="0.0236686" y="0.972973" />
+                            <point x="0.230769" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite55" sid="328624296267077">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956834162511793" speed="5">
+                    <frame duration="1" hotspotX="0.500261" hotspotY="0.500693" original-source="C:\Users\evelyn.correa\Desktop\aaaaa.png">
+                        <collision-poly>
+                            <point x="0.0268645" y="0.0363761" />
+                            <point x="0.97783" y="0.0300178" />
+                            <point x="0.984612" y="0.49982" />
+                            <point x="0.860981" y="0.812079" />
+                            <point x="0.5" y="1" />
+                            <point x="0.139019" y="0.812079" />
+                            <point x="0.0237346" y="0.49982" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chrome" sid="768235224002826">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="497008997600921" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\evelyn.correa\Downloads\chrome.png">
+                        <collision-poly>
+                            <point x="0.176667" y="0.176667" />
+                            <point x="0.5" y="0.0433333" />
+                            <point x="0.823333" y="0.176667" />
+                            <point x="0.956667" y="0.5" />
+                            <point x="0.823333" y="0.823333" />
+                            <point x="0.5" y="0.956667" />
+                            <point x="0.176667" y="0.823333" />
+                            <point x="0.0433333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="firefox" sid="721461088642025">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="502672795631107" speed="5">
+                    <frame duration="1" hotspotX="0.501873" hotspotY="0.5" original-source="C:\Users\evelyn.correa\Downloads\firefox.png">
+                        <collision-poly>
+                            <point x="0.11236" y="0.110294" />
+                            <point x="0.498127" y="0.00735294" />
+                            <point x="0.853933" y="0.143382" />
+                            <point x="0.981273" y="0.5" />
+                            <point x="0.816479" y="0.819853" />
+                            <point x="0.498127" y="0.944853" />
+                            <point x="0.179775" y="0.823529" />
+                            <point x="0.0149813" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="safari" sid="922781821347890">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="608817249133611" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\evelyn.correa\Downloads\safari1600.png">
+                        <collision-poly>
+                            <point x="0.147244" y="0.147244" />
+                            <point x="0.5" y="0.0015748" />
+                            <point x="0.852756" y="0.147244" />
+                            <point x="0.998425" y="0.5" />
+                            <point x="0.852756" y="0.852756" />
+                            <point x="0.5" y="0.998425" />
+                            <point x="0.147244" y="0.852756" />
+                            <point x="0.0015748" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="internetexplorerlogoielogo" sid="235203564319023">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="147997002915650" speed="5">
+                    <frame duration="1" hotspotX="0.554857" hotspotY="0.553681" original-source="C:\Users\evelyn.correa\Downloads\internet-explorer-logo-ie-logo.png">
+                        <collision-poly>
+                            <point x="0.215143" y="0.219086" />
+                            <point x="0.5" y="0.0686645" />
+                            <point x="0.953714" y="0.0471341" />
+                            <point x="0.999429" y="0.499855" />
+                            <point x="0.858857" y="0.85627" />
+                            <point x="0.5" y="0.978179" />
+                            <point x="0.0351429" y="0.964213" />
+                            <point x="0.123143" y="0.499855" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground11" sid="876150698068025">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\wintertileset\png\BG\BG.png" />
+        </object-type>
+        <object-type name="TiledBackground12" sid="996237192798514">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="890338599141673">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="432933487715952">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\wintertileset\png\Tiles\2.png" />
+        </object-type>
+        <object-type name="TiledBackground13" sid="280443595195742">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="209265889975455">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\wintertileset\png\Tiles\5.png" />
+        </object-type>
+        <object-type name="warp" sid="427951056517283">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="608356269645703" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="warp2" sid="250831690036726">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="753956691278642" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tree_" sid="636171039426542">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="534545341616530" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\wintertileset\png\Object\Tree_1.png">
+                        <collision-poly>
+                            <point x="0.197802" y="0.257143" />
+                            <point x="0.5" y="0" />
+                            <point x="0.802198" y="0.257143" />
+                            <point x="0.887363" y="0.5" />
+                            <point x="0.857143" y="0.814286" />
+                            <point x="0.5" y="0.996429" />
+                            <point x="0.142857" y="0.814286" />
+                            <point x="0.10989" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite56" sid="823690650998928">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="747897119895814" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite57" sid="707530759139791">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="528379688231126" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Extras" sid="790308959826742">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="move" sid="107527883315052" type="boolean" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="843939506322984" speed="5">
+                    <frame duration="1" hotspotX="0.500536" hotspotY="1" original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\Extras.png">
+                        <collision-poly>
+                            <point x="0.0192926" y="0.0217129" />
+                            <point x="0.499464" y="0.00120627" />
+                            <point x="0.974277" y="0.0289505" />
+                            <point x="0.902465" y="0.499397" />
+                            <point x="0.77492" y="0.746683" />
+                            <point x="0.499464" y="1" />
+                            <point x="0.22508" y="0.746683" />
+                            <point x="0.0214362" y="0.499397" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cristal" sid="475182681839154">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="795505567308855" speed="5">
+                    <frame duration="1" hotspotX="0.505155" hotspotY="1" original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\wintertileset\png\Object\Crystal.png">
+                        <collision-poly>
+                            <point x="0.268041" y="0.333333" />
+                            <point x="0.494845" y="0.025641" />
+                            <point x="0.701031" y="0.371795" />
+                            <point x="0.927835" y="0.5" />
+                            <point x="0.989691" y="0.987179" />
+                            <point x="0.0103093" y="0.987179" />
+                            <point x="0.0618557" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SnowMan" sid="203695766536917">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="430112104021470" speed="0">
+                    <frame duration="1" hotspotX="0.497409" hotspotY="0.5" original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\wintertileset\png\Object\SnowMan.png">
+                        <collision-poly>
+                            <point x="0.694301" y="0.5" />
+                            <point x="0.994819" y="0.995238" />
+                            <point x="0.00518137" y="0.995238" />
+                            <point x="0.290155" y="0.5" />
+                            <point x="0.165803" y="0.152381" />
+                            <point x="0.502591" y="0" />
+                            <point x="0.694301" y="0.280952" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502591" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.305699" y="0.280952" />
+                            <point x="0.497409" y="0" />
+                            <point x="0.834197" y="0.152381" />
+                            <point x="0.709845" y="0.5" />
+                            <point x="0.994819" y="0.995238" />
+                            <point x="0.00518135" y="0.995238" />
+                            <point x="0.305699" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Stone2" sid="196039814945601">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="674212122900448" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\wintertileset\png\Object\Stone.png">
+                        <collision-poly>
+                            <point x="0.201613" y="0.320513" />
+                            <point x="0.5" y="0.0128205" />
+                            <point x="0.854839" y="0.230769" />
+                            <point x="0.951613" y="0.5" />
+                            <point x="0.991935" y="0.987179" />
+                            <point x="0.00806452" y="0.987179" />
+                            <point x="0.0967742" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Crystal" sid="711235053822423">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256080435967966" speed="5">
+                    <frame duration="1" hotspotX="0.505155" hotspotY="0.5" original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\wintertileset\png\Object\Crystal.png">
+                        <collision-poly>
+                            <point x="0.938144" y="0.5" />
+                            <point x="0.989691" y="0.987179" />
+                            <point x="0.0103093" y="0.987179" />
+                            <point x="0.072165" y="0.5" />
+                            <point x="0.298969" y="0.371795" />
+                            <point x="0.505155" y="0.025641" />
+                            <point x="0.731959" y="0.333333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="placaProact" sid="277727175034126">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="676288998036130" speed="5">
+                    <frame duration="1" hotspotX="0.500536" hotspotY="0.500603" original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\placaProact.png">
+                        <collision-poly>
+                            <point x="0.0192926" y="0.0217129" />
+                            <point x="0.499464" y="0.00120627" />
+                            <point x="0.974277" y="0.0289505" />
+                            <point x="0.904609" y="0.499397" />
+                            <point x="0.77492" y="0.746683" />
+                            <point x="0.499464" y="1" />
+                            <point x="0.22508" y="0.746683" />
+                            <point x="0.0235799" y="0.499397" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Stone3" sid="723778839639013">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="827271404250728" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\wintertileset\png\Object\Stone.png">
+                        <collision-poly>
+                            <point x="0.201613" y="0.320513" />
+                            <point x="0.5" y="0.0128205" />
+                            <point x="0.854839" y="0.230769" />
+                            <point x="0.951613" y="0.5" />
+                            <point x="0.991935" y="0.987179" />
+                            <point x="0.00806452" y="0.987179" />
+                            <point x="0.0967742" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="homeSign" sid="949297895954884">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="834588555186640" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503185" original-source="C:\Users\evelyn.correa\Downloads\Sobre-master (1)\Sobre-master\Todas Artes\homeSign.png">
+                        <collision-poly>
+                            <point x="0.215278" y="0.197452" />
+                            <point x="0.5" y="0.191083" />
+                            <point x="0.756944" y="0.22293" />
+                            <point x="0.819444" y="0.496815" />
+                            <point x="0.513889" y="0.55414" />
+                            <point x="0.5" y="0.55414" />
+                            <point x="0.243056" y="0.77707" />
+                            <point x="0.0416667" y="0.496815" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
