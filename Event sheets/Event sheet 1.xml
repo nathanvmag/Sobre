@@ -297,7 +297,7 @@
                     <actions>
                         <action id="-9" name="Set value" sid="672179436205072" type="System">
                             <param id="0" name="Variable">shake</param>
-                            <param id="1" name="Value">1-random(2)</param>
+                            <param id="1" name="Value">0.5-random(1)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -547,10 +547,23 @@
                     <param id="0" name="Instance variable">time</param>
                     <param id="1" name="Value">0</param>
                 </action>
-                <action id="-16" name="Set opacity" sid="474924362486523" type="Player">
-                    <param id="0" name="Opacity">100</param>
-                </action>
             </actions>
+            <sub-events>
+                <event-block sid="559972336287877">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="594491407286353" type="platarform">
+                            <param id="0" name="Instance variable">time</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="474924362486523" type="Player">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="805134985716578">
             <conditions>
@@ -702,6 +715,20 @@
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="-16" name="Set opacity" sid="292950193383786" type="Player">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="973903732653866">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="966214168740362" type="flyer">
+                            <param id="0" name="Instance variable">time</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="101662074270037" type="Player">
                             <param id="0" name="Opacity">100</param>
                         </action>
                     </actions>

@@ -14,6 +14,7 @@
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -2044,20 +2045,155 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite45" sid="406690886740547">
+        <object-type name="Naveapp" sid="406690886740547">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="166607611094519" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\NATHAN.MAGALHAES\Desktop\GitHub\sobre\Todas Artes\naveappIphone.png">
+                    <frame duration="1" hotspotX="-0.381579" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes\Desktop\GitHub\sobre\sobre\Todas Artes\naveappIphone.png">
                         <collision-poly>
-                            <point x="0.0466667" y="0.0225806" />
-                            <point x="0.5" y="0" />
-                            <point x="0.953333" y="0.0225806" />
-                            <point x="0.993333" y="0.5" />
-                            <point x="0.926667" y="0.964516" />
-                            <point x="0.5" y="0.987097" />
-                            <point x="0.0666667" y="0.967742" />
-                            <point x="0.00666667" y="0.5" />
+                            <point x="0" y="0.025641" />
+                            <point x="0" y="0.00320513" />
+                            <point x="1" y="0.025641" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="0.961538" />
+                            <point x="0" y="0.983975" />
+                            <point x="0" y="0.964744" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cubetrix" sid="146440652942337">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="649400629785459" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes\Desktop\GitHub\sobre\sobre\Todas Artes\naveappIphone.png">
+                        <collision-poly>
+                            <point x="0" y="0.025641" />
+                            <point x="1" y="0.0576923" />
+                            <point x="1" y="0.5" />
+                            <point x="0" y="0.964744" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NWjs" sid="689589898417614">
+            <plugin id="NodeWebkit" />
+        </object-type>
+        <object-type name="Sprite45" sid="193751399821101">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869249766747683" speed="5">
+                    <frame duration="1" hotspotX="2.36842" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes\Desktop\GitHub\sobre\sobre\Todas Artes\naveappIphone.png">
+                        <collision-poly>
+                            <point x="0" y="0.025641" />
+                            <point x="1" y="0.0576923" />
+                            <point x="1" y="0.5" />
+                            <point x="0" y="0.964744" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite48" sid="748877715248786">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="754146411361565" speed="5">
+                    <frame duration="1" hotspotX="3.74342" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes\Desktop\GitHub\sobre\sobre\Todas Artes\naveappIphone.png">
+                        <collision-poly>
+                            <point x="0.0526316" y="0.025641" />
+                            <point x="1" y="0.0576923" />
+                            <point x="1" y="0.5" />
+                            <point x="0.0723684" y="0.964744" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite49" sid="931244739178897">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="563946270422070" speed="5">
+                    <frame duration="1" hotspotX="1.14848" hotspotY="1.05082" original-source="C:\Users\nathan.magalhaes\Desktop\GitHub\sobre\sobre\Todas Artes\adoBeProgs.png">
+                        <collision-poly>
+                            <point x="0.109091" y="0.17541" />
+                            <point x="1" y="0.0819672" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite50" sid="310096102932445">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="335607330374306" speed="5">
+                    <frame duration="1" hotspotX="-0.176558" hotspotY="0.996672" original-source="C:\Users\nathan.magalhaes\Desktop\GitHub\sobre\sobre\Todas Artes\adoBeProgs.png">
+                        <collision-poly>
+                            <point x="0" y="0.108153" />
+                            <point x="0.925816" y="0.0133112" />
+                            <point x="0.0727004" y="0.995008" />
+                            <point x="0.87092" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0563799" y="0.995008" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite51" sid="693040500838224">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="999936159466719" speed="5">
+                    <frame duration="1" hotspotX="1.17831" hotspotY="-0.0564784" original-source="C:\Users\nathan.magalhaes\Desktop\GitHub\sobre\sobre\Todas Artes\adoBeProgs.png">
+                        <collision-poly>
+                            <point x="0.15899" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.863787" />
+                            <point x="0.0222883" y="0.983389" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite52" sid="406895972770149">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="817094199573434" speed="5">
+                    <frame duration="1" hotspotX="-0.110945" hotspotY="-0.0755034" original-source="C:\Users\nathan.magalhaes\Desktop\GitHub\sobre\sobre\Todas Artes\adoBeProgs.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.14093" y="0" />
+                            <point x="0.947526" y="0.854027" />
+                            <point x="0" y="0.974832" />
+                            <point x="0.124438" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite53" sid="195753360100866">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="995625282497192" speed="5">
+                    <frame duration="1" hotspotX="0.50101" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes\Desktop\GitHub\sobre\sobre\Todas Artes\know.png">
+                        <collision-poly>
+                            <point x="0.0808081" y="0.0921659" />
+                            <point x="0.49899" y="0.105991" />
+                            <point x="0.826263" y="0.198157" />
+                            <point x="0.826263" y="0.5" />
+                            <point x="0.919192" y="0.907834" />
+                            <point x="0.49899" y="0.889401" />
+                            <point x="0.139394" y="0.841014" />
+                            <point x="0.139394" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -2074,6 +2210,7 @@
     <global-instances>
         <global-instance type="Keyboard" uid="11" />
         <global-instance type="Browser" uid="9" />
+        <global-instance type="NWjs" uid="117" />
     </global-instances>
     <sounds-folder />
     <music-folder />
