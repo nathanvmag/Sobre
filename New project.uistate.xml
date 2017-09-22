@@ -143,5 +143,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/placaProact/" />
         <folder expanded="1" path="animation-folder/Stone3/" />
         <folder expanded="1" path="animation-folder/homeSign/" />
+        <folder expanded="1" path="animation-folder/UpIglu/" />
+        <folder expanded="1" path="animation-folder/igluUp/" />
+        <folder expanded="1" path="animation-folder/Tree_2/" />
+        <folder expanded="1" path="animation-folder/Title/" />
+        <folder expanded="1" path="animation-folder/Sprite58/" />
+        <folder expanded="1" path="animation-folder/Sprite59/" />
+        <folder expanded="1" path="animation-folder/Sprite60/" />
     </folders-expanded>
 </c2uistate>

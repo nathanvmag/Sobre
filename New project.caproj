@@ -8,7 +8,7 @@
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
     <unique-id>1fl9q7j8c790d</unique-id>
-    <saved-with-version>23900</saved-with-version>
+    <saved-with-version>24600</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
@@ -423,7 +423,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="542535663895258" speed="5">
-                    <frame duration="1" hotspotX="0.500384" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes.NAVE0\Documents\Placa1.png">
+                    <frame duration="1" hotspotX="0.500384" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Placa1.png">
                         <collision-poly>
                             <point x="0.0498849" y="0.0460993" />
                             <point x="0.499616" y="0.00141844" />
@@ -2550,6 +2550,147 @@
                             <point x="0.5" y="0.55414" />
                             <point x="0.243056" y="0.77707" />
                             <point x="0.0416667" y="0.496815" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="UpIglu" sid="665144197112841">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="358269824802457" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.501075" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\igluzao.png">
+                        <collision-poly>
+                            <point x="0" y="0.443011" />
+                            <point x="0.379813" y="0.00860215" />
+                            <point x="0.83975" y="0.331183" />
+                            <point x="0.907388" y="0.498925" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.498925" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="igluUp" sid="570656509855349">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="934729482735599" speed="5">
+                    <frame duration="1" hotspotX="1" hotspotY="0.501075" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\igluzao.png">
+                        <collision-poly>
+                            <point x="0.172964" y="0.443011" />
+                            <point x="0.49958" y="0.00860215" />
+                            <point x="0.870697" y="0.331183" />
+                            <point x="0.925273" y="0.498925" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0898405" y="0.498925" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Tree_2" sid="151941182747319">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="559806387166035" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\wintertileset\png\Object\Tree_2.png">
+                        <collision-poly>
+                            <point x="0.232456" y="0.189286" />
+                            <point x="0.5" y="0.00714286" />
+                            <point x="0.723684" y="0.225" />
+                            <point x="0.934211" y="0.5" />
+                            <point x="0.72807" y="0.778571" />
+                            <point x="0.5" y="0.996429" />
+                            <point x="0.289474" y="0.764286" />
+                            <point x="0.114035" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Title" sid="940669283662559">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="33" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="646017885177694" speed="0">
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10002.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10003.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10004.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10005.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10006.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10007.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10008.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10009.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10010.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10011.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10012.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10013.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10014.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10015.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10016.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10017.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10018.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10019.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10020.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10021.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10022.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10023.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10024.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10025.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10026.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10027.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10028.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10029.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10030.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10031.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10032.png" />
+                    <frame duration="1" hotspotX="0.500325" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\titleTx\teste\Sem título-10033.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite58" sid="161120896596192">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="370387064396321" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite59" sid="849318127142499">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="729626642307466" speed="5">
+                    <frame duration="1" hotspotX="0.500384" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\Placa1.1.png">
+                        <collision-poly>
+                            <point x="0.0498849" y="0.0460993" />
+                            <point x="0.499616" y="0.00141844" />
+                            <point x="0.946278" y="0.0496454" />
+                            <point x="1" y="0.5" />
+                            <point x="0.564083" y="0.597163" />
+                            <point x="0.499616" y="0.996454" />
+                            <point x="0.442057" y="0.591489" />
+                            <point x="0.00537222" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite60" sid="923748996997564">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="524511652466170" speed="5">
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\freetileset\png\Object\Bush (4).png">
+                        <collision-poly>
+                            <point x="0.205479" y="0.326087" />
+                            <point x="0.493151" y="0" />
+                            <point x="0.794521" y="0.326087" />
+                            <point x="0.931507" y="0.5" />
+                            <point x="0.972603" y="0.956522" />
+                            <point x="0.493151" y="1" />
+                            <point x="0.0273973" y="0.956522" />
+                            <point x="0.0958904" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
