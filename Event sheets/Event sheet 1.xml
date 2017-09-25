@@ -102,6 +102,12 @@
                 <action id="-18" name="Rotate clockwise" sid="456746389142451" type="Portal2">
                     <param id="0" name="Degrees">60*dt</param>
                 </action>
+                <action id="-18" name="Rotate clockwise" sid="790219179590654" type="Android_robot">
+                    <param id="0" name="Degrees">60*dt</param>
+                </action>
+                <action id="-18" name="Rotate clockwise" sid="556445038519866" type="iospng">
+                    <param id="0" name="Degrees">-60*dt</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="642681038187739">
@@ -218,7 +224,7 @@
         <event-block sid="493670337974712">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="405567817587572" type="Player">
-                    <param id="0" name="Object">Sprite22</param>
+                    <param id="0" name="Object">bushzin</param>
                 </condition>
             </conditions>
             <actions>
@@ -734,9 +740,6 @@
         </event-block>
         <event-block sid="713550597392416">
             <conditions>
-                <condition id="0" name="On key pressed" sid="601715312622965" type="Keyboard">
-                    <param id="0" name="Key">88 (X)</param>
-                </condition>
                 <condition id="1" name="Is overlapping another object" sid="678147244109456" type="Player">
                     <param id="0" name="Object">MobileDev</param>
                 </condition>
@@ -930,6 +933,102 @@
                     <param id="0" name="Speed">12</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="743334906833393">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="160905301510381" type="Keyboard">
+                    <param id="0" name="Key">88 (X)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="616075599626105" type="Player">
+                    <param id="0" name="Object">pnArcade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="599830398490894" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://drive.google.com/file/d/0B6OjftcbAvhXYV9YUkZMLVlvRFk/view&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="224392769459911">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="969879029717790" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="827408683927554" type="Player">
+                    <param id="0" name="Object">pnArcade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="413747454870840" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://docs.google.com/presentation/d/1WsG-sqrRNTvoQNJD_t9iR6R03nC64gWh2Hht4iQWr1Y/edit?usp=sharing&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="452188526889927">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="717871569552376" type="Keyboard">
+                    <param id="0" name="Key">88 (X)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="174663724543115" type="Player">
+                    <param id="0" name="Object">RSarcade</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="861727647141376">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="914796913378307" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="878510174138897" type="Player">
+                    <param id="0" name="Object">RSarcade</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="801791412965888">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="939010911520142" type="Keyboard">
+                    <param id="0" name="Key">88 (X)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="829364354945836" type="Player">
+                    <param id="0" name="Object">MNarcade</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="393626975485216">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="915111564926239" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="108191036538865" type="Player">
+                    <param id="0" name="Object">MNarcade</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="914179329878394">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="945867101623325" type="Keyboard">
+                    <param id="0" name="Key">88 (X)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="392833510023504" type="Player">
+                    <param id="0" name="Object">Dnarcade</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="969510497993880">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="312011819456784" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="368332586446037" type="Player">
+                    <param id="0" name="Object">Dnarcade</param>
+                </condition>
+            </conditions>
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>

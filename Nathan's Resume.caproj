@@ -845,15 +845,15 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="926952277267674" speed="5">
-                    <frame duration="1" hotspotX="0.506849" hotspotY="0.510638" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\freetileset\png\Object\Bush (3).png">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\freetileset\png\Object\Bush (3).png">
                         <collision-poly>
-                            <point x="0.493151" y="0.0425532" />
-                            <point x="0.780822" y="0.340426" />
-                            <point x="0.945205" y="0.489362" />
-                            <point x="0.986301" y="0.978723" />
-                            <point x="0.493151" y="1" />
-                            <point x="0.0273973" y="0.957447" />
-                            <point x="0.0958904" y="0.489362" />
+                            <point x="0" y="0.50027" />
+                            <point x="1" y="0.50027" />
+                            <point x="1" y="0.50027" />
+                            <point x="1" y="0.503513" />
+                            <point x="0.52" y="0.503035" />
+                            <point x="0.0266667" y="0.503538" />
+                            <point x="0" y="0.50027" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1698,7 +1698,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite43" sid="616406672721731">
+        <object-type name="MNarcade" sid="616406672721731">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="334890988824937" speed="2">
@@ -1725,7 +1725,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite44" sid="727965241875923">
+        <object-type name="Dnarcade" sid="727965241875923">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="258973425598841" speed="3">
@@ -2704,12 +2704,12 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="401869477965338" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1.34896" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\formation.png">
+                    <frame duration="1" hotspotX="0.500173" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes\Desktop\GitHub\sobre\sobre\Todas Artes\formation.png">
                         <collision-poly>
-                            <point x="0.0189852" y="0.0885417" />
-                            <point x="0.986538" y="0.00520833" />
-                            <point x="0.871246" y="0.953125" />
-                            <point x="0.131861" y="0.90625" />
+                            <point x="0.0186531" y="0.0717232" />
+                            <point x="0.986874" y="0" />
+                            <point x="0.871502" y="1" />
+                            <point x="0.131607" y="1" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -2847,7 +2847,102 @@
         </object-type>
         <object-type name="TiledBackground14" sid="269956553598746">
             <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="760638829774852">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <texture original-source="C:\Users\nathan.magalhaes\Downloads\Sobre-master\Todas Artes\wintertileset\png\Object\IceBox.png" />
+        </object-type>
+        <object-type name="Sprite63" sid="112712349073746">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="542309811125251" speed="5">
+                    <frame duration="1" hotspotX="0.50081" hotspotY="0.501639" original-source="C:\Users\nathan.magalhaes\Desktop\GitHub\sobre\sobre\Todas Artes\mobileskils.png">
+                        <collision-poly>
+                            <point x="0.0210697" y="0.0426229" />
+                            <point x="0.49919" y="0.00655738" />
+                            <point x="0.97893" y="0.0426229" />
+                            <point x="1" y="0.498361" />
+                            <point x="0.97893" y="0.957377" />
+                            <point x="0.49919" y="0.996721" />
+                            <point x="0.0210697" y="0.957377" />
+                            <point x="0.00162075" y="0.498361" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="iospng" sid="261177721802153">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552592538181367" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes\Downloads\ios-png-4076.png">
+                        <collision-poly>
+                            <point x="0.253906" y="0.253906" />
+                            <point x="0.5" y="0.128906" />
+                            <point x="0.757813" y="0.242188" />
+                            <point x="0.710938" y="0.710938" />
+                            <point x="0.5" y="0.957031" />
+                            <point x="0.300781" y="0.699219" />
+                            <point x="0.207031" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="android" sid="843512051593591">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="245153851675110" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502041" original-source="C:\Users\nathan.magalhaes\Downloads\android.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Android_robot" sid="622399323076502">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="428246273455420" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\nathan.magalhaes\Downloads\Android_robot.png">
+                        <collision-poly>
+                            <point x="0.217773" y="0.183087" />
+                            <point x="0.5" y="0.0582923" />
+                            <point x="0.77832" y="0.186371" />
+                            <point x="0.994141" y="0.5" />
+                            <point x="0.748047" y="0.788177" />
+                            <point x="0.251953" y="0.788177" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bushzin" sid="610405826060820">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="315101445817674" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite64" sid="575026373369460">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869062599933596" speed="5">
+                    <frame duration="1" hotspotX="0.504951" hotspotY="0.504951" original-source="C:\Users\nathan.magalhaes\Desktop\GitHub\sobre\sobre\Todas Artes\wintertileset\png\Object\IceBox.png">
+                        <collision-poly>
+                            <point x="0.049505" y="0.049505" />
+                            <point x="0.49505" y="0.00990099" />
+                            <point x="0.940594" y="0.0594059" />
+                            <point x="0.990099" y="0.49505" />
+                            <point x="0.950495" y="0.950495" />
+                            <point x="0.49505" y="1" />
+                            <point x="0.049505" y="0.950495" />
+                            <point x="0" y="0.49505" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

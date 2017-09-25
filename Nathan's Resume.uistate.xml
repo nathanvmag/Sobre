@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="0">Layout 1</layout>
-        <event-sheet order="1">Event sheet 1</event-sheet>
+        <layout order="0">Layout 1</layout>
+        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -102,8 +102,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite42/" />
         <folder expanded="1" path="animation-folder/pnArcade/" />
         <folder expanded="1" path="animation-folder/RSarcade/" />
-        <folder expanded="1" path="animation-folder/Sprite43/" />
-        <folder expanded="1" path="animation-folder/Sprite44/" />
+        <folder expanded="1" path="animation-folder/MNarcade/" />
+        <folder expanded="1" path="animation-folder/Dnarcade/" />
         <folder expanded="1" path="animation-folder/Barrel/" />
         <folder expanded="1" path="animation-folder/Plataform2/" />
         <folder expanded="1" path="animation-folder/flyer/" />
@@ -158,5 +158,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite62/" />
         <folder expanded="1" path="animation-folder/medalha/" />
         <folder expanded="1" path="animation-folder/medalha2/" />
+        <folder expanded="1" path="animation-folder/Sprite63/" />
+        <folder expanded="1" path="animation-folder/iospng/" />
+        <folder expanded="1" path="animation-folder/android/" />
+        <folder expanded="1" path="animation-folder/Android_robot/" />
+        <folder expanded="1" path="animation-folder/bushzin/" />
+        <folder expanded="1" path="animation-folder/Sprite64/" />
     </folders-expanded>
 </c2uistate>
