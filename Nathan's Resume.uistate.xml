@@ -11,7 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="0">Layout 1</layout>
+        <layout order="2">Loading</layout>
         <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+        <event-sheet order="3">Loadingevents</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -22,9 +24,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <families-expanded root="1" />
     <folders-expanded>
         <folder expanded="1" path="object-folder/" />
-        <folder expanded="1" path="layout-folder/" />
-        <folder expanded="1" path="event-folder/" />
-        <folder expanded="1" path="file-folder/" />
+        <folder expanded="0" path="layout-folder/" />
+        <folder expanded="0" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="1" path="file-folder/Icons/" />
@@ -116,8 +118,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite47/" />
         <folder expanded="1" path="animation-folder/Naveapp/" />
         <folder expanded="1" path="animation-folder/cubetrix/" />
-        <folder expanded="1" path="animation-folder/Sprite45/" />
-        <folder expanded="1" path="animation-folder/Sprite48/" />
+        <folder expanded="1" path="animation-folder/Fastfit/" />
+        <folder expanded="1" path="animation-folder/10plug/" />
         <folder expanded="1" path="animation-folder/Sprite49/" />
         <folder expanded="1" path="animation-folder/Sprite50/" />
         <folder expanded="1" path="animation-folder/Sprite51/" />
@@ -164,5 +166,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Android_robot/" />
         <folder expanded="1" path="animation-folder/bushzin/" />
         <folder expanded="1" path="animation-folder/Sprite64/" />
+        <folder expanded="1" path="animation-folder/nsrArcade/" />
+        <folder expanded="1" path="animation-folder/bg/" />
+        <folder expanded="1" path="animation-folder/bar/" />
     </folders-expanded>
 </c2uistate>

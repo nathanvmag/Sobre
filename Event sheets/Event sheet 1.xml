@@ -113,7 +113,7 @@
         <event-block sid="642681038187739">
             <conditions>
                 <condition id="2" name="Key is down" sid="309263817614894" type="Keyboard">
-                    <param id="0" name="Key">37 (Left arrow)</param>
+                    <param id="0" name="Key">37</param>
                 </condition>
             </conditions>
             <actions>
@@ -125,7 +125,7 @@
         <event-block sid="799148285595302">
             <conditions>
                 <condition id="2" name="Key is down" sid="194061124827877" type="Keyboard">
-                    <param id="0" name="Key">39 (Right arrow)</param>
+                    <param id="0" name="Key">39</param>
                 </condition>
             </conditions>
             <actions>
@@ -191,6 +191,13 @@
             <actions>
                 <action id="10" name="Request fullscreen" sid="895263519431852" type="Browser">
                     <param id="0" name="Mode">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="304249718653157" type="System">
+                    <param id="0" name="Seconds">0.4</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="535024442093075" type="bg">
+                    <param id="0" name="Instance variable">fade</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -937,7 +944,7 @@
         <event-block sid="743334906833393">
             <conditions>
                 <condition id="0" name="On key pressed" sid="160905301510381" type="Keyboard">
-                    <param id="0" name="Key">88 (X)</param>
+                    <param id="0" name="Key">88</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="616075599626105" type="Player">
                     <param id="0" name="Object">pnArcade</param>
@@ -952,7 +959,7 @@
         <event-block sid="224392769459911">
             <conditions>
                 <condition id="0" name="On key pressed" sid="969879029717790" type="Keyboard">
-                    <param id="0" name="Key">90 (Z)</param>
+                    <param id="0" name="Key">90</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="827408683927554" type="Player">
                     <param id="0" name="Object">pnArcade</param>
@@ -967,68 +974,283 @@
         <event-block sid="452188526889927">
             <conditions>
                 <condition id="0" name="On key pressed" sid="717871569552376" type="Keyboard">
-                    <param id="0" name="Key">88 (X)</param>
+                    <param id="0" name="Key">88</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="174663724543115" type="Player">
                     <param id="0" name="Object">RSarcade</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="17" name="Execute Javascript" sid="349622617120925" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://nathanvmag.github.io/RioSimulator/&apos;);&quot;</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="861727647141376">
             <conditions>
                 <condition id="0" name="On key pressed" sid="914796913378307" type="Keyboard">
-                    <param id="0" name="Key">90 (Z)</param>
+                    <param id="0" name="Key">90</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="878510174138897" type="Player">
                     <param id="0" name="Object">RSarcade</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="17" name="Execute Javascript" sid="223218298650882" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://docs.google.com/presentation/d/1D1p0eqdAf8aA2tEDSMMyTsbwzlDZ9MSHTfgsuRDi1ik/edit?usp=sharing&apos;);&quot;</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="801791412965888">
             <conditions>
                 <condition id="0" name="On key pressed" sid="939010911520142" type="Keyboard">
-                    <param id="0" name="Key">88 (X)</param>
+                    <param id="0" name="Key">88</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="829364354945836" type="Player">
                     <param id="0" name="Object">MNarcade</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="17" name="Execute Javascript" sid="127728961944286" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://drive.google.com/drive/folders/0B0iavKoD6ijzMVBRbjVRdmxzLUU&apos;);&quot;</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="393626975485216">
             <conditions>
                 <condition id="0" name="On key pressed" sid="915111564926239" type="Keyboard">
-                    <param id="0" name="Key">90 (Z)</param>
+                    <param id="0" name="Key">90</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="108191036538865" type="Player">
                     <param id="0" name="Object">MNarcade</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="17" name="Execute Javascript" sid="790578410912182" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://drive.google.com/file/d/0B-p0JVpHKmcYb2VfdWI5RTRpNW8/view?usp=sharing&apos;);&quot;</param>
+                </action>
+            </actions>
         </event-block>
         <event-block sid="914179329878394">
             <conditions>
                 <condition id="0" name="On key pressed" sid="945867101623325" type="Keyboard">
-                    <param id="0" name="Key">88 (X)</param>
+                    <param id="0" name="Key">88</param>
                 </condition>
                 <condition id="1" name="Is overlapping another object" sid="392833510023504" type="Player">
                     <param id="0" name="Object">Dnarcade</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="17" name="Execute Javascript" sid="334572359364846" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://drive.google.com/open?id=0B0iavKoD6ijzU0NhejlZWkJacFU&apos;);&quot;</param>
+                </action>
+            </actions>
         </event-block>
-        <event-block sid="969510497993880">
+        <event-block sid="986162459910613">
             <conditions>
-                <condition id="0" name="On key pressed" sid="312011819456784" type="Keyboard">
-                    <param id="0" name="Key">90 (Z)</param>
+                <condition id="0" name="On key pressed" sid="438881797374119" type="Keyboard">
+                    <param id="0" name="Key">88</param>
                 </condition>
-                <condition id="1" name="Is overlapping another object" sid="368332586446037" type="Player">
-                    <param id="0" name="Object">Dnarcade</param>
+                <condition id="1" name="Is overlapping another object" sid="550271260361713" type="Player">
+                    <param id="0" name="Object">nsrArcade</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action id="17" name="Execute Javascript" sid="176917453332419" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;http://nsr.bitballoon.com/&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="139836575345574">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="600761020145011" type="Keyboard">
+                    <param id="0" name="Key">88</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="228731429169040" type="Player">
+                    <param id="0" name="Object">Naveapp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="616427005357490" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://play.google.com/store/apps/details?id=com.nave.naveapp.naveapp&amp;hl=pt-br&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="965108365410962">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="572546240098130" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="761648672784300" type="Player">
+                    <param id="0" name="Object">Naveapp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="354345704824252" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://docs.google.com/presentation/d/1j-KTOD2sGwZxT82me184jBrzC6qHq2S0hLtgFv0U8Jk/edit?usp=sharing&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="537112114134291">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="358699732183871" type="Keyboard">
+                    <param id="0" name="Key">88</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="191358529228179" type="Player">
+                    <param id="0" name="Object">cubetrix</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="543572041419182" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://play.google.com/store/apps/details?id=com.Stormide.Cubetrixx&amp;hl=pt-br&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="675580704203344">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="478111691296520" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="105819490815997" type="Player">
+                    <param id="0" name="Object">cubetrix</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="195574931473975" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://drive.google.com/open?id=0B2JYlT4Wf4yBbDRrbE9QaDVuX1U&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="643972770490192">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="744896555689925" type="Keyboard">
+                    <param id="0" name="Key">88</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="812781999334933" type="Player">
+                    <param id="0" name="Object">Fastfit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="562591765267419" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://github.com/nathanvmag/fastfit&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="923978853994358">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="969850460516604" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="258720903105432" type="Player">
+                    <param id="0" name="Object">Fastfit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="534855687221236" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://docs.google.com/presentation/d/1OZA3MYVOLP3nSR4GSL9QvBgtfuKw2FBa1H602Q7HOJo/edit?usp=sharing&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="841130636064082">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="763209998562111" type="Keyboard">
+                    <param id="0" name="Key">88</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="953325772105744" type="Player">
+                    <param id="0" name="Object">10plug</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="426749951513905" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://github.com/nathanvmag/10Plugando&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="447820870034669">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="310926131934262" type="Keyboard">
+                    <param id="0" name="Key">90</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="692736416521149" type="Player">
+                    <param id="0" name="Object">10plug</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="194299940110598" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://docs.google.com/presentation/d/1fZ8q-hm0CEspw_kXXbaQZB-HXZsKlnVE-03Ej0wH784/edit?usp=sharing&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="610056417762267">
+            <conditions>
+                <condition id="2" inverted="1" name="Key is down" sid="523486769011567" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="291610703362474" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="914185444033036" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="799619187915767" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="988610429793063" type="Player">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="441489400041068">
+            <conditions>
+                <condition id="-22" name="Else" sid="561550151560785" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="957824497224940" type="Player">
+                    <param id="0" name="Max Speed">450</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="516370572028245">
+            <conditions>
+                <condition id="-8" name="Is boolean instance variable set" sid="364861848045415" type="bg">
+                    <param id="0" name="Instance variable">fade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="858613003322721" type="bg">
+                    <param id="0" name="Opacity">lerp(bg.Opacity,0,dt*1.5)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="392227154564052">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="258789820741053" type="Mouse">
+                    <param id="0" name="Object">Sprite23</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="409930528271245" type="Sprite23">
+                    <param id="0" name="Width">236*1.2</param>
+                </action>
+                <action id="-6" name="Set height" sid="554775301310125" type="Sprite23">
+                    <param id="0" name="Height">256*1.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="976349945299583">
+            <conditions>
+                <condition id="-22" name="Else" sid="753759573677586" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="853638468517740" type="Sprite23">
+                    <param id="0" name="Width">236</param>
+                </action>
+                <action id="-6" name="Set height" sid="838409561174813" type="Sprite23">
+                    <param id="0" name="Height">256</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

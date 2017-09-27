@@ -8,12 +8,13 @@
     <author-website>http://</author-website>
     <app-id>com.stormide.sobre</app-id>
     <unique-id>1fl9q7j8c790d</unique-id>
-    <saved-with-version>23900</saved-with-version>
+    <saved-with-version>24600</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="NodeWebkit" version="1">NW.js</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
@@ -21,6 +22,7 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -38,14 +40,15 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
-    <use-loader-layout>0</use-loader-layout>
+    <first-layout>Loading</first-layout>
+    <use-loader-layout>1</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
         <prop name="Downscaling">Medium quality</prop>
         <prop name="Enable WebGL">On</prop>
         <prop name="Fullscreen in browser">Letterbox scale</prop>
         <prop name="Fullscreen scaling">High quality</prop>
-        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Loader style">Progress bar only</prop>
         <prop name="Orientations">Any</prop>
         <prop name="Pause on unfocus">No</prop>
         <prop name="Physics engine">Box2D asm.js</prop>
@@ -1461,69 +1464,69 @@
                     </frame>
                 </animation>
                 <animation framecount="63" loop="0" name="ligada" pingpong="0" repeatcount="1" repeatto="0" sid="438698528770287" speed="24">
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0001.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0002.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0003.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0004.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0005.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0006.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0007.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0008.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0009.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0010.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0011.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0012.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0013.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0014.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0015.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0016.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0017.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0018.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0019.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0020.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0021.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0022.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0023.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0024.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0025.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0026.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0027.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0028.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0029.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0030.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0031.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0032.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0033.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0034.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0035.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0036.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0037.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0038.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0039.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0040.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0041.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0042.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0043.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0044.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0045.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0046.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0047.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0048.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0049.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0050.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0051.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0052.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0053.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0054.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0055.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0056.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0057.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0058.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0059.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0060.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0061.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0062.png" />
-                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\tvanin\Ligando0063.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0001.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0002.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0003.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0004.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0005.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0006.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0007.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0008.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0009.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0010.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0011.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0012.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0013.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0014.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0015.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0016.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0017.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0018.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0019.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0020.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0021.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0022.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0023.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0024.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0025.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0026.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0027.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0028.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0029.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0030.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0031.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0032.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0033.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0034.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0035.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0036.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0037.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0038.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0039.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0040.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0041.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0042.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0043.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0044.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0045.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0046.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0047.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0048.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0049.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0050.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0051.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0052.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0053.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0054.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0055.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0056.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0057.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0058.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0059.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0060.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0061.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0062.png" />
+                    <frame duration="1" hotspotX="0.500411" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\tvanin\Ligando0063.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -1733,30 +1736,30 @@
                         <collision-poly>
                             <point x="0" y="0" />
                             <point x="1" y="0" />
-                            <point x="1" y="0.601287" />
-                            <point x="1" y="0.870609" />
+                            <point x="0.976945" y="0.984252" />
+                            <point x="0" y="1" />
                             <point x="0" y="0" />
                             <point x="0" y="0" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.501441" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\arcades.png">
                         <collision-poly>
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0.450422" />
-                            <point x="0" y="0" />
                             <point x="0" y="0" />
                             <point x="1" y="0" />
+                            <point x="0.976945" y="0.984252" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.501441" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\Sobre\Todas Artes\arcades.png">
                         <collision-poly>
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="1" y="0" />
-                            <point x="0" y="0" />
                             <point x="0" y="0" />
                             <point x="1" y="0" />
+                            <point x="0.976945" y="0.984252" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="0" y="0" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -2086,7 +2089,7 @@
         <object-type name="NWjs" sid="689589898417614">
             <plugin id="NodeWebkit" />
         </object-type>
-        <object-type name="Sprite45" sid="193751399821101">
+        <object-type name="Fastfit" sid="193751399821101">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869249766747683" speed="5">
@@ -2101,7 +2104,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite48" sid="748877715248786">
+        <object-type name="10plug" sid="748877715248786">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="754146411361565" speed="5">
@@ -2944,18 +2947,105 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="nsrArcade" sid="696237146228865">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="1" repeatcount="1" repeatto="0" sid="626532286121879" speed="3">
+                    <frame duration="1" hotspotX="0.501441" hotspotY="0.5" original-source="C:\Users\Nathan\Documents\GitHub\SObre\sobre\Todas Artes\MACHINES-01.png">
+                        <collision-poly>
+                            <point x="0.0662824" y="0.00918635" />
+                            <point x="1" y="0.0459318" />
+                            <point x="1" y="0.503937" />
+                            <point x="1" y="0.963255" />
+                            <point x="1" y="1" />
+                            <point x="0.0778098" y="0.993438" />
+                            <point x="0.135447" y="0.503937" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501441" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0.0249344" />
+                            <point x="1" y="0.48294" />
+                            <point x="1" y="0.942257" />
+                            <point x="0.472623" y="0.998688" />
+                            <point x="0" y="0.972441" />
+                            <point x="0" y="0.48294" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501441" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.971182" y="0.0249344" />
+                            <point x="0.881844" y="0.48294" />
+                            <point x="0.974063" y="0.942257" />
+                            <point x="0" y="0.998688" />
+                            <point x="0" y="0.972441" />
+                            <point x="0" y="0.48294" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bg" sid="531247182749088">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="fade" sid="101337233845817" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="814152924375575">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="169274082035206" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Nathan\Documents\GitHub\SObreee\sobre\Todas Artes\Loading\loading-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bar" sid="622001111144111">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="886012190193574" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\Nathan\Documents\GitHub\SObreee\sobre\Todas Artes\Loading\loading-02.png">
+                        <collision-poly>
+                            <point x="0.0139276" y="0.0142857" />
+                            <point x="0.64624" y="0.0142857" />
+                            <point x="0.998143" y="0.514286" />
+                            <point x="0.64624" y="0.971429" />
+                            <point x="0.0176416" y="0.971429" />
+                            <point x="0.00185701" y="0.514286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground15" sid="213348992943167">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="loadingbar" sid="545099246162867">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Nathan\Documents\GitHub\SObreee\sobre\Todas Artes\Loading\loading-03.png" />
+        </object-type>
+        <object-type name="Mouse" sid="275040701582853">
+            <plugin id="Mouse" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Loading.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Loadingevents.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="11" />
         <global-instance type="Browser" uid="9" />
         <global-instance type="NWjs" uid="117" />
+        <global-instance type="Mouse" uid="183" />
     </global-instances>
     <sounds-folder />
     <music-folder />
