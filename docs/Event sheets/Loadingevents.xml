@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Loadingevents</name>
+    <events>
+        <event-block sid="277710320934237">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="666481508366803" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="681860637556256" type="loadingbar">
+                    <param id="0" name="Width">loadingprogress*505.207</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="921278520470690">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="313293373341426" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="853941203709950" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="944805979536303">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="654301016195715" type="System" />
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="749703201162336" type="Browser">
+                    <param id="0" name="Javascript">&quot;if (confirm(&apos;Hey, you want open the resume in text mode ?&apos;)){window.open(&apos;https://docs.google.com/document/d/1-pmOfhmQ-Z0BrKXYQKBvrkc0vv145CHb0eoOLloRAKQ/edit?usp=sharing&apos;)}&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
