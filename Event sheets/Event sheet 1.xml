@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="endFade" sid="124250345588708" static="0" type="number">0</variable>
         <variable constant="0" name="shakeTime" sid="974048076513801" static="0" type="number">0</variable>
         <variable constant="0" name="shake" sid="610979216885838" static="0" type="number">0</variable>
         <variable constant="0" name="Velocity" sid="904292387568253" static="0" type="number">8</variable>
@@ -74,6 +75,11 @@
                 <condition id="-1" name="Every tick" sid="563065288419548" type="System" />
                 <condition id="1" name="Is overlapping another object" sid="300447024577462" type="Player">
                     <param id="0" name="Object">Zones</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="225859694817929" type="System">
+                    <param id="0" name="Variable">endFade</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
@@ -390,10 +396,13 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="697371329971334">
+        <event-block any="1" sid="697371329971334">
             <conditions>
                 <condition id="1" name="Is overlapping another object" sid="508890582694467" type="Player">
                     <param id="0" name="Object">apple</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="924640607655839" type="Player">
+                    <param id="0" name="Object">aliendown</param>
                 </condition>
             </conditions>
             <actions>
@@ -406,6 +415,7 @@
                     <param id="0" name="Variable">shakeTime</param>
                     <param id="1" name="Value">0.8</param>
                 </action>
+                <action id="-9" name="Destroy" sid="734479170068908" type="aliendown" />
             </actions>
         </event-block>
         <event-block sid="499685795151136">
@@ -901,6 +911,9 @@
                 <action id="-6" name="Set height" sid="680299500706380" type="Placa">
                     <param id="0" name="Height">lerp(placa.Width,235.951,5*dt) </param>
                 </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="237603696736037" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="645584890942964">
@@ -1224,7 +1237,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block disabled="1" sid="392227154564052">
+        <event-block sid="392227154564052">
             <conditions>
                 <condition id="7" name="Cursor is over object" sid="258789820741053" type="Mouse">
                     <param id="0" name="Object">Sprite23</param>
@@ -1239,7 +1252,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block disabled="1" sid="976349945299583">
+        <event-block sid="976349945299583">
             <conditions>
                 <condition id="-22" name="Else" sid="753759573677586" type="System" />
             </conditions>
@@ -1249,6 +1262,326 @@
                 </action>
                 <action id="-6" name="Set height" sid="838409561174813" type="Sprite23">
                     <param id="0" name="Height">256</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="921400899848613">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="519373043228927" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite23</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="787480435117976" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://play.google.com/store/apps/dev?id=7809539149564341530&amp;hl=pt-br&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="364038389649850">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="746429486968432" type="Mouse">
+                    <param id="0" name="Object">fbport</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="836255382956874" type="fbport">
+                    <param id="0" name="Width">72.492*1.2</param>
+                </action>
+                <action id="-6" name="Set height" sid="766206122600526" type="fbport">
+                    <param id="0" name="Height"> 87.941*1.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="598066913040066">
+            <conditions>
+                <condition id="-22" name="Else" sid="336377793782443" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="463250863446866" type="fbport">
+                    <param id="0" name="Width">72.492</param>
+                </action>
+                <action id="-6" name="Set height" sid="190469259362853" type="fbport">
+                    <param id="0" name="Height"> 87.941</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="340338663371889">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="425112017840560" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">fbport</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="417146546586758" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://www.facebook.com/nathanviera1&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="632297193932537">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="156251586125757" type="Mouse">
+                    <param id="0" name="Object">githubphoto</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="587696284533865" type="githubphoto">
+                    <param id="0" name="Width">72.492*1.2</param>
+                </action>
+                <action id="-6" name="Set height" sid="568358644474688" type="githubphoto">
+                    <param id="0" name="Height"> 87.941*1.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="691052099632581">
+            <conditions>
+                <condition id="-22" name="Else" sid="989835868564288" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="501972369471256" type="githubphoto">
+                    <param id="0" name="Width">72.492</param>
+                </action>
+                <action id="-6" name="Set height" sid="813782460500236" type="githubphoto">
+                    <param id="0" name="Height"> 87.941</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="450656780683896">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="283334733992091" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">githubphoto</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="561317456310689" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://www.github.com/nathanvmag&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="698909210431659">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="952548113878004" type="Mouse">
+                    <param id="0" name="Object">email</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="455954709948510" type="email">
+                    <param id="0" name="Width">72.492*1.2</param>
+                </action>
+                <action id="-6" name="Set height" sid="944961538171344" type="email">
+                    <param id="0" name="Height"> 87.941*1.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="273162075331668">
+            <conditions>
+                <condition id="-22" name="Else" sid="451218865855623" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="242129982966813" type="email">
+                    <param id="0" name="Width">72.492</param>
+                </action>
+                <action id="-6" name="Set height" sid="596393727794548" type="email">
+                    <param id="0" name="Height"> 87.941</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="893249590195809">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="744422872047449" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">email</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="687553179272791" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;mailto:nathanvmag@gmail.com&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="106843887664526">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="914752158537588" type="Mouse">
+                    <param id="0" name="Object">pdfport</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="750511705338070" type="pdfport">
+                    <param id="0" name="Width">72.492*1.2</param>
+                </action>
+                <action id="-6" name="Set height" sid="444909837406217" type="pdfport">
+                    <param id="0" name="Height"> 87.941*1.2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="878805742371368">
+            <conditions>
+                <condition id="-22" name="Else" sid="859736301507045" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="985971893580913" type="pdfport">
+                    <param id="0" name="Width">72.492</param>
+                </action>
+                <action id="-6" name="Set height" sid="147756759375053" type="pdfport">
+                    <param id="0" name="Height"> 87.941</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="419283393157819">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="701845088094956" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">pdfport</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="792962987557853" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://docs.google.com/document/d/1-pmOfhmQ-Z0BrKXYQKBvrkc0vv145CHb0eoOLloRAKQ/edit?usp=sharing&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="580450977349015">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="379086038039254" type="Mouse">
+                    <param id="0" name="Object">telefone</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="585365263863242" type="telefone">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="213281078686149" type="telefone">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Sine2" id="0" name="Set active" sid="216824017193122" type="telefone">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Sine" id="2" name="Set magnitude" sid="353170003506071" type="telefone">
+                    <param id="0" name="Magnitude">0</param>
+                </action>
+                <action behavior="Sine2" id="2" name="Set magnitude" sid="635290472032718" type="telefone">
+                    <param id="0" name="Magnitude">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="537608466260030">
+            <conditions>
+                <condition id="-22" name="Else" sid="769918631527465" type="System" />
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="371645719755577" type="telefone">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="335006041685147" type="telefone">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Sine2" id="0" name="Set active" sid="458019421933544" type="telefone">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Sine" id="2" name="Set magnitude" sid="193013747091371" type="telefone">
+                    <param id="0" name="Magnitude">1</param>
+                </action>
+                <action behavior="Sine2" id="2" name="Set magnitude" sid="762766337169644" type="telefone">
+                    <param id="0" name="Magnitude">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="934436528903948">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="243243158846258" type="Mouse">
+                    <param id="0" name="Object">english</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="648111031218143" type="english">
+                    <param id="0" name="Width">420.305 *1.1</param>
+                </action>
+                <action id="-6" name="Set height" sid="280548524308957" type="english">
+                    <param id="0" name="Height">343.4*1.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="985552042596231">
+            <conditions>
+                <condition id="-22" name="Else" sid="753954626927940" type="System" />
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="869928543145443" type="english">
+                    <param id="0" name="Width">420.305 </param>
+                </action>
+                <action id="-6" name="Set height" sid="366259642806649" type="english">
+                    <param id="0" name="Height">343.4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="423021778502936">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="266051301353489" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">english</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="726634273276184" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://www.facebook.com/wizard.oficial&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="729951932632356">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="729986669619199" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Alien</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="523359659501622" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://www.facebook.com/navecejll/&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="406612790333977">
+            <conditions>
+                <condition id="-10" name="Compare opacity" sid="552327419728236" type="bg">
+                    <param id="0" name="Comparison">3</param>
+                    <param id="1" name="Opacity">10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="276142172440418" type="System">
+                    <param id="0" name="Variable">endFade</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="400347308932560">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="819288542160748" type="Player">
+                    <param id="0" name="Object">Arvoce</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="27" name="Set enabled" sid="837038642729211" type="Arvoce">
+                    <param id="0" name="Mode">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="880395544247866">
+            <conditions>
+                <condition id="-22" name="Else" sid="452659252848159" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Physics" id="27" name="Set enabled" sid="196019727925385" type="Arvoce">
+                    <param id="0" name="Mode">1</param>
                 </action>
             </actions>
         </event-block>

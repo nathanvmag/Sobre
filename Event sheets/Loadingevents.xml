@@ -23,5 +23,15 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="944805979536303">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="654301016195715" type="System" />
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="749703201162336" type="Browser">
+                    <param id="0" name="Javascript">&quot;if (confirm(&apos;Hey, you want open the resume in text mode ?&apos;)){window.open(&apos;https://docs.google.com/document/d/1-pmOfhmQ-Z0BrKXYQKBvrkc0vv145CHb0eoOLloRAKQ/edit?usp=sharing&apos;)}&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

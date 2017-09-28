@@ -169,5 +169,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/nsrArcade/" />
         <folder expanded="1" path="animation-folder/bg/" />
         <folder expanded="1" path="animation-folder/bar/" />
+        <folder expanded="1" path="animation-folder/Sprite43/" />
+        <folder expanded="1" path="animation-folder/Sprite44/" />
+        <folder expanded="1" path="animation-folder/githubphoto/" />
+        <folder expanded="1" path="animation-folder/fbport/" />
+        <folder expanded="1" path="animation-folder/email/" />
+        <folder expanded="1" path="animation-folder/pdfport/" />
+        <folder expanded="1" path="animation-folder/lixo/" />
+        <folder expanded="1" path="animation-folder/estante/" />
+        <folder expanded="1" path="animation-folder/bed/" />
+        <folder expanded="1" path="animation-folder/imagecredits/" />
+        <folder expanded="1" path="animation-folder/escrivaninha/" />
+        <folder expanded="1" path="animation-folder/telefone/" />
+        <folder expanded="1" path="animation-folder/aliendown/" />
     </folders-expanded>
 </c2uistate>
