@@ -484,8 +484,11 @@
                     <param id="0" name="Instance variable">Atirar</param>
                     <param id="1" name="Value">1</param>
                 </action>
-                <action id="11" name="Set collisions enabled" sid="253724800503973" type="Bt">
+                <action id="11" name="Set collisions enabled" sid="524941667189165" type="Bt">
                     <param id="0" name="Collisions">0</param>
+                </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="817824128281304" type="Bt">
+                    <param id="0" name="Mode">0</param>
                 </action>
             </actions>
         </event-block>
@@ -518,6 +521,12 @@
                 <action id="4" name="Set animation" sid="798775532054392" type="Tvanim">
                     <param id="0" name="Animation">&quot;ligada&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+                <action id="-5" name="Set width" sid="666702658808864" type="Tvanim">
+                    <param id="0" name="Width">683.571</param>
+                </action>
+                <action id="-6" name="Set height" sid="170999901709981" type="Tvanim">
+                    <param id="0" name="Height">395.426</param>
                 </action>
             </actions>
         </event-block>
