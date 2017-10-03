@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
     <events>
+        <variable constant="0" name="isMobile" sid="985360593148134" static="0" type="number">0</variable>
         <variable constant="0" name="endFade" sid="124250345588708" static="0" type="number">0</variable>
         <variable constant="0" name="shakeTime" sid="974048076513801" static="0" type="number">0</variable>
         <variable constant="0" name="shake" sid="610979216885838" static="0" type="number">0</variable>
@@ -199,11 +200,15 @@
                     <param id="0" name="Mode">0</param>
                 </action>
                 <action id="-16" name="Wait" sid="304249718653157" type="System">
-                    <param id="0" name="Seconds">0.4</param>
+                    <param id="0" name="Seconds">0.2</param>
                 </action>
                 <action id="-13" name="Set boolean" sid="535024442093075" type="bg">
                     <param id="0" name="Instance variable">fade</param>
                     <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="602413877510174" type="System">
+                    <param id="0" name="Variable">isMobile</param>
+                    <param id="1" name="Value">Browser.ExecJS(&quot;isMobile()&quot;)</param>
                 </action>
             </actions>
         </event-block>
@@ -993,6 +998,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="110767143849180">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="139595971055871" type="Touch">
+                    <param id="0" name="Object">pnArcade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="407391763561009" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://docs.google.com/presentation/d/1WsG-sqrRNTvoQNJD_t9iR6R03nC64gWh2Hht4iQWr1Y/edit?usp=sharing&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="452188526889927">
             <conditions>
                 <condition id="0" name="On key pressed" sid="717871569552376" type="Keyboard">
@@ -1023,6 +1040,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="433060817550116">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="426338981337307" type="Touch">
+                    <param id="0" name="Object">RSarcade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="488085230862352" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://docs.google.com/presentation/d/1D1p0eqdAf8aA2tEDSMMyTsbwzlDZ9MSHTfgsuRDi1ik/edit?usp=sharing&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="801791412965888">
             <conditions>
                 <condition id="0" name="On key pressed" sid="939010911520142" type="Keyboard">
@@ -1049,6 +1078,18 @@
             </conditions>
             <actions>
                 <action id="17" name="Execute Javascript" sid="790578410912182" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://drive.google.com/file/d/0B-p0JVpHKmcYb2VfdWI5RTRpNW8/view?usp=sharing&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="626836275521042">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="561611029655358" type="Touch">
+                    <param id="0" name="Object">MNarcade</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="274251244012016" type="Browser">
                     <param id="0" name="Javascript">&quot;window.open(&apos;https://drive.google.com/file/d/0B-p0JVpHKmcYb2VfdWI5RTRpNW8/view?usp=sharing&apos;);&quot;</param>
                 </action>
             </actions>
@@ -1098,6 +1139,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="457401237949037">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="190178991644440" type="Touch">
+                    <param id="0" name="Object">Naveapp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="225508390756773" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://play.google.com/store/apps/details?id=com.nave.naveapp.naveapp&amp;hl=pt-br&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="965108365410962">
             <conditions>
                 <condition id="0" name="On key pressed" sid="572546240098130" type="Keyboard">
@@ -1143,6 +1196,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="459229111419929">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="819562308942083" type="Touch">
+                    <param id="0" name="Object">cubetrix</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="884777209417120" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://play.google.com/store/apps/details?id=com.Stormide.Cubetrixx&amp;hl=pt-br&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="643972770490192">
             <conditions>
                 <condition id="0" name="On key pressed" sid="744896555689925" type="Keyboard">
@@ -1169,6 +1234,18 @@
             </conditions>
             <actions>
                 <action id="17" name="Execute Javascript" sid="534855687221236" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://docs.google.com/presentation/d/1OZA3MYVOLP3nSR4GSL9QvBgtfuKw2FBa1H602Q7HOJo/edit?usp=sharing&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="143681236151381">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="629634546368685" type="Touch">
+                    <param id="0" name="Object">Fastfit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="536816931090462" type="Browser">
                     <param id="0" name="Javascript">&quot;window.open(&apos;https://docs.google.com/presentation/d/1OZA3MYVOLP3nSR4GSL9QvBgtfuKw2FBa1H602Q7HOJo/edit?usp=sharing&apos;);&quot;</param>
                 </action>
             </actions>
@@ -1203,6 +1280,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="717708998776221">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="915137303996465" type="Touch">
+                    <param id="0" name="Object">10plug</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="321910880233500" type="Browser">
+                    <param id="0" name="Javascript">&quot;window.open(&apos;https://docs.google.com/presentation/d/1fZ8q-hm0CEspw_kXXbaQZB-HXZsKlnVE-03Ej0wH784/edit?usp=sharing&apos;);&quot;</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="610056417762267">
             <conditions>
                 <condition id="2" inverted="1" name="Key is down" sid="523486769011567" type="Keyboard">
@@ -1216,6 +1305,11 @@
                 </condition>
                 <condition id="2" inverted="1" name="Key is down" sid="799619187915767" type="Keyboard">
                     <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="659822444868479" type="System">
+                    <param id="0" name="Variable">isMobile</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
@@ -1242,7 +1336,7 @@
             </conditions>
             <actions>
                 <action id="-16" name="Set opacity" sid="858613003322721" type="bg">
-                    <param id="0" name="Opacity">lerp(bg.Opacity,0,dt*1.5)</param>
+                    <param id="0" name="Opacity">lerp(bg.Opacity,0,dt*2.5)</param>
                 </action>
             </actions>
         </event-block>
@@ -1274,12 +1368,15 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="921400899848613">
+        <event-block any="1" sid="921400899848613">
             <conditions>
                 <condition id="6" name="On object clicked" sid="519373043228927" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">Sprite23</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="924076649684228" type="Touch">
+                    <param id="0" name="Object">Sprite23</param>
                 </condition>
             </conditions>
             <actions>
@@ -1316,12 +1413,15 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="340338663371889">
+        <event-block any="1" sid="340338663371889">
             <conditions>
                 <condition id="6" name="On object clicked" sid="425112017840560" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">fbport</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="856040854583198" type="Touch">
+                    <param id="0" name="Object">fbport</param>
                 </condition>
             </conditions>
             <actions>
@@ -1358,12 +1458,15 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="450656780683896">
+        <event-block any="1" sid="450656780683896">
             <conditions>
                 <condition id="6" name="On object clicked" sid="283334733992091" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">githubphoto</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="869091084852764" type="Touch">
+                    <param id="0" name="Object">githubphoto</param>
                 </condition>
             </conditions>
             <actions>
@@ -1400,12 +1503,15 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="893249590195809">
+        <event-block any="1" sid="893249590195809">
             <conditions>
                 <condition id="6" name="On object clicked" sid="744422872047449" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">email</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="709123438114915" type="Touch">
+                    <param id="0" name="Object">email</param>
                 </condition>
             </conditions>
             <actions>
@@ -1442,12 +1548,15 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="419283393157819">
+        <event-block any="1" sid="419283393157819">
             <conditions>
                 <condition id="6" name="On object clicked" sid="701845088094956" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">pdfport</param>
+                </condition>
+                <condition id="4" name="Is touching object" sid="323135677980440" type="Touch">
+                    <param id="0" name="Object">pdfport</param>
                 </condition>
             </conditions>
             <actions>
@@ -1530,7 +1639,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="423021778502936">
+        <event-block any="1" sid="423021778502936">
             <conditions>
                 <condition id="6" name="On object clicked" sid="266051301353489" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
@@ -1594,17 +1703,144 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="173566253062574">
+        <event-block sid="164572515998953">
             <conditions>
-                <condition id="6" name="On object clicked" sid="931202898297259" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Sprite10</param>
+                <condition id="-14" name="Compare variable" sid="936032443589263" type="System">
+                    <param id="0" name="Variable">isMobile</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="17" name="Execute Javascript" sid="387044915558586" type="Browser">
-                    <param id="0" name="Javascript">&quot;alert(&apos;aa&apos;)&quot;</param>
+                <action id="-15" name="Set visible" sid="810047591332605" type="rarrow">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="129394276145785" type="rarrow">
+                    <param id="0" name="Width">0</param>
+                    <param id="1" name="Height">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="968044103962687" type="larrow">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="793034052334653" type="larrow">
+                    <param id="0" name="Width">0</param>
+                    <param id="1" name="Height">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="538304560506854" type="uparrow">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-7" name="Set size" sid="904280427361425" type="uparrow">
+                    <param id="0" name="Width">0</param>
+                    <param id="1" name="Height">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="377584366174394">
+            <conditions>
+                <condition id="-22" name="Else" sid="427924053812076" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="839333832486275" type="rarrow">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="563495468898328" type="rarrow">
+                    <param id="0" name="Width">124</param>
+                    <param id="1" name="Height">124</param>
+                </action>
+                <action id="-15" name="Set visible" sid="111944376959561" type="larrow">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="689612787682614" type="larrow">
+                    <param id="0" name="Width">124</param>
+                    <param id="1" name="Height">124</param>
+                </action>
+                <action id="-15" name="Set visible" sid="500271970524050" type="uparrow">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-7" name="Set size" sid="849711337390432" type="uparrow">
+                    <param id="0" name="Width">124</param>
+                    <param id="1" name="Height">124</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="952540679443496">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="526433587881888" type="Touch">
+                    <param id="0" name="Object">larrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="411895528272887" type="Player">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="214665890707799" type="larrow">
+                    <param id="0" name="Opacity">90</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="709988174014038" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="186409178080354">
+            <conditions>
+                <condition id="-22" name="Else" sid="141667372923098" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="657280101700443" type="larrow">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="102148065337204">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="244703028216143" type="Touch">
+                    <param id="0" name="Object">rarrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="646504393459897" type="Player">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="732449573126546" type="rarrow">
+                    <param id="0" name="Opacity">90</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="414729831759738" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="674874580212760">
+            <conditions>
+                <condition id="-22" name="Else" sid="827442310979663" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="853061746955879" type="rarrow">
+                    <param id="0" name="Opacity">40</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="601435810367010">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="995194439602195" type="Touch">
+                    <param id="0" name="Object">uparrow</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="523951701832192" type="Player">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="828453130356424" type="uparrow">
+                    <param id="0" name="Opacity">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="901011889781953">
+            <conditions>
+                <condition id="-22" name="Else" sid="785063441675218" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="539192469476323" type="uparrow">
+                    <param id="0" name="Opacity">40</param>
                 </action>
             </actions>
         </event-block>

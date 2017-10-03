@@ -54,7 +54,6 @@
 			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
 		}
 	})();
-
 	</script>
 	
 	<!-- The canvas must be inside a div called c2canvasdiv -->
@@ -101,20 +100,20 @@
 			else
 				cr_setSuspended(false);
 		};
-			 function isMobile(){
-			console.log("aqio");
-		 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-		 alert("you are in Mobile");
-		 return 1;
-		}else 
-		alert("you are in PC");
-		return 0;
-		}
+		
 		document.addEventListener("visibilitychange", onVisibilityChanged, false);
 		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
 		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
 		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+		function isMobile(){
+			console.log("aqio");
+		 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		
+		 return 1;
+		}else 
+		
+		return 0;
+		}
 		function OnRegisterSWError(e)
 		{
 			console.warn("Failed to register service worker: ", e);
