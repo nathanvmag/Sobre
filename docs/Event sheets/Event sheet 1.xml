@@ -1594,5 +1594,19 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="173566253062574">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="931202898297259" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite10</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="387044915558586" type="Browser">
+                    <param id="0" name="Javascript">&quot;alert(&apos;aa&apos;)&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
