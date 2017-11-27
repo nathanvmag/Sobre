@@ -92,7 +92,15 @@
 			// Create new runtime using the c2canvas
 			cr_createRuntime("c2canvas");
 		});
+		function isMobile(){
+			console.log("aqio");
+		 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		
+		 return 1;
+		}else 
+		
+		return 0;
+		}
 		// Pause and resume on page becoming visible/invisible
 		function onVisibilityChanged() {
 			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
@@ -105,15 +113,7 @@
 		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
 		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
 		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
-		function isMobile(){
-			console.log("aqio");
-		 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		
-		 return 1;
-		}else 
-		
-		return 0;
-		}
 		function OnRegisterSWError(e)
 		{
 			console.warn("Failed to register service worker: ", e);

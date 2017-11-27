@@ -3233,6 +3233,24 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite10" sid="660610178669997">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852899242135388" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.430421" original-source="C:\Users\Nathan\Documents\GitHub\nathanvmag.github.io\docs\Todas Artes\obmep.png">
+                        <collision-poly>
+                            <point x="0.14365" y="0" />
+                            <point x="0.85635" y="0" />
+                            <point x="0.650763" y="0.429646" />
+                            <point x="0.590458" y="0.592073" />
+                            <point x="0.5" y="1" />
+                            <point x="0.415024" y="0.582229" />
+                            <point x="0.35746" y="0.429646" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

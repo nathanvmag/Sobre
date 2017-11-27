@@ -466,6 +466,9 @@
                 <action id="-16" name="Set opacity" sid="165093543903412" type="Formation">
                     <param id="0" name="Opacity">lerp(Formation.Opacity,100,2*dt)</param>
                 </action>
+                <action id="-16" name="Set opacity" sid="650593013342291" type="Sprite10">
+                    <param id="0" name="Opacity">lerp(sprite10.Opacity,100,7*dt)</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="970163883725715">
@@ -1000,7 +1003,7 @@
         </event-block>
         <event-block sid="110767143849180">
             <conditions>
-                <condition id="4" name="Is touching object" sid="139595971055871" type="Touch">
+                <condition id="16" name="On hold over object" sid="139595971055871" type="Touch">
                     <param id="0" name="Object">pnArcade</param>
                 </condition>
             </conditions>
@@ -1042,7 +1045,7 @@
         </event-block>
         <event-block sid="433060817550116">
             <conditions>
-                <condition id="4" name="Is touching object" sid="426338981337307" type="Touch">
+                <condition id="16" name="On hold over object" sid="426338981337307" type="Touch">
                     <param id="0" name="Object">RSarcade</param>
                 </condition>
             </conditions>
@@ -1084,7 +1087,7 @@
         </event-block>
         <event-block sid="626836275521042">
             <conditions>
-                <condition id="4" name="Is touching object" sid="561611029655358" type="Touch">
+                <condition id="16" name="On hold over object" sid="561611029655358" type="Touch">
                     <param id="0" name="Object">MNarcade</param>
                 </condition>
             </conditions>
@@ -1141,7 +1144,7 @@
         </event-block>
         <event-block sid="457401237949037">
             <conditions>
-                <condition id="4" name="Is touching object" sid="190178991644440" type="Touch">
+                <condition id="16" name="On hold over object" sid="190178991644440" type="Touch">
                     <param id="0" name="Object">Naveapp</param>
                 </condition>
             </conditions>
@@ -1198,7 +1201,7 @@
         </event-block>
         <event-block sid="459229111419929">
             <conditions>
-                <condition id="4" name="Is touching object" sid="819562308942083" type="Touch">
+                <condition id="16" name="On hold over object" sid="819562308942083" type="Touch">
                     <param id="0" name="Object">cubetrix</param>
                 </condition>
             </conditions>
@@ -1240,7 +1243,7 @@
         </event-block>
         <event-block sid="143681236151381">
             <conditions>
-                <condition id="4" name="Is touching object" sid="629634546368685" type="Touch">
+                <condition id="16" name="On hold over object" sid="629634546368685" type="Touch">
                     <param id="0" name="Object">Fastfit</param>
                 </condition>
             </conditions>
@@ -1282,7 +1285,7 @@
         </event-block>
         <event-block sid="717708998776221">
             <conditions>
-                <condition id="4" name="Is touching object" sid="915137303996465" type="Touch">
+                <condition id="16" name="On hold over object" sid="915137303996465" type="Touch">
                     <param id="0" name="Object">10plug</param>
                 </condition>
             </conditions>
@@ -1375,7 +1378,7 @@
                     <param id="1" name="Click type">0</param>
                     <param id="2" name="Object clicked">Sprite23</param>
                 </condition>
-                <condition id="4" name="Is touching object" sid="924076649684228" type="Touch">
+                <condition id="16" name="On hold over object" sid="924076649684228" type="Touch">
                     <param id="0" name="Object">Sprite23</param>
                 </condition>
             </conditions>
